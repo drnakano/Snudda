@@ -95,5 +95,25 @@
         "mech_param": "gcabar",
         "type": "range",
         "sectionlist": "somatic"
+    },
+
+    {
+        "param_name": "gbar_kir23",
+        "mech": "it_lts",
+        "value": 0.000298088068044151,
+        "dist_type": "uniform",
+        "mech_param": "gbar",
+        "type": "range",
+        "sectionlist": "somatic"
+    },
+
+    {
+        "param_name": "gbar_kir23",
+        "mech": "it_lts",
+        "value": 0.00000000000000001,
+        "dist_type": "uniform",
+        "mech_param": "gbar",
+        "type": "range",
+        "sectionlist": "basal"
     }
 ]

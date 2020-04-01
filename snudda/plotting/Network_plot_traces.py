@@ -141,10 +141,19 @@ class NetworkPlotTraces():
           import pdb
           pdb.set_trace()
           
-        
+      '''  
+      plt.plot(self.time[timeIdx]-skipTime,
+               self.voltage[r][timeIdx] + ofs,label=r)
+      print('show')
+
       plt.plot(self.time[timeIdx]-skipTime,
                self.voltage[r][timeIdx] + ofs,
-               color=colour)
+               color=colour,label=traceID)
+      
+      '''
+      plt.plot(self.time[timeIdx]-skipTime,
+               self.voltage[r][timeIdx] + ofs,label=r)
+      
       ofs += offset
 
     if(plotCount == 0):
@@ -162,6 +171,7 @@ class NetworkPlotTraces():
       ax.set_yticklabels([])
 
     plt.tight_layout()
+    plt.legend()
     plt.ion()
     plt.show()
     plt.draw()
@@ -235,7 +245,7 @@ if __name__ == "__main__":
 
     plotOffset = 0 # -0.2
     skipTime = 0 #0.5
-    nTracesMax = 5
+    nTracesMax = 10
     
     npt.plotTraceNeuronType(neuronType="dSPN",nTraces=nTracesMax,offset=plotOffset,skipTime=skipTime)
     npt.plotTraceNeuronType(neuronType="iSPN",nTraces=nTracesMax,offset=plotOffset,skipTime=skipTime)

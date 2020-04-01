@@ -109,8 +109,8 @@
 	"Cortical" : {
 	    "generator" : "poisson",	    
 	    "type: " : "AMPA_NMDA",
-	    "synapseDensity": "0.03*(1-np.exp(-d/200e-6))",	    
-	    "frequency" : 1,
+	    "synapseDensity": "0.001*(1-np.exp(-d/200e-6))",	    
+	    "frequency" : 3,
 	    "channelCorrelation" : 0.0,
 	    "jitter" : 0.001,	    
 	    "conductance" : 0.5e-9,	    
@@ -120,8 +120,10 @@
 	"Thalamic" : {
 	    "generator" : "poisson",	    
 	    "type: " : "AMPA_NMDA",
-	    "synapseDensity" : "0.03*np.exp(-d/200e-6)",	    
-	    "frequency" : 1,
+	    "synapseDensity" : "0.001*np.exp(-d/200e-6)",
+	    "start" : 0.5,
+	    "end" : 1.0,
+	    "frequency" : 20,
 	    "channelCorrelation" : 0.0,
 	    "jitter" : 0.001,	    
 	    "conductance" : 0.5e-9,	    

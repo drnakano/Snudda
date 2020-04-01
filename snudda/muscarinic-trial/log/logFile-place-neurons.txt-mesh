@@ -1,0 +1,23 @@
+Found old cache file (muscarinic-trial/mesh/Striatum-cube-mesh-9.21541483049846e-05.obj-92-cache.pickle), ignoring.
+Running in serial
+Voxel mask: 6x6x5
+Processing x = 0
+Processing x = 1
+Processing x = 2
+Processing x = 3
+Processing x = 4
+Processing x = 5
+Fraction of border voxels: 0.0
+Saving mesh cache file muscarinic-trial/mesh/Striatum-cube-mesh-9.21541483049846e-05.obj-92-cache.pickle
+Calculation time: 0.010720694001065567 s
+Setup voxel list
+Setup place neurons
+Update padding mask
+Regenerating new random pool
+Setup done
+Inner voxel bin volume: 0.0 mm³
+Placed 1 in 0.002487646008376032 s
+Placed 1 in 0.003677663000416942 s
+Placed 1 in 0.002923363004811108 s
+Placed 30 in 0.10650517599424347 s
+Placed 30 in 0.18390559899853542 s

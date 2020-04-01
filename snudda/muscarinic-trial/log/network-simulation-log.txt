@@ -1,0 +1,216 @@
+Using networkFile: muscarinic-trial/network-pruned-synapses.hdf5
+Using inputFile: muscarinic-trial/input-spikes.hdf5
+Using logFile: muscarinic-trial/log/network-simulation-log.txt
+Worker 0: Loading network from muscarinic-trial/network-pruned-synapses.hdf5
+Loading config file muscarinic-trial/network-config.json
+0: Memory status: 79% free
+Distributing neurons.
+Setup neurons
+Node 0 - cell 0 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 1 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 2 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 3 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 4 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 5 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 6 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 7 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 8 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 9 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 10 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 11 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 12 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 13 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 14 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 15 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 16 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 17 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 18 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 19 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 20 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 21 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 22 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 23 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 24 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 25 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 26 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 27 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 28 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 29 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 30 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 31 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 32 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 33 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 34 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 35 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 36 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 37 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 38 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 39 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 40 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 41 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 42 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 43 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 44 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 45 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 46 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 47 FSN_2
+Neuron FSN_2 resting voltage = -85
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 48 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 49 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 50 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 51 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 52 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 53 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 54 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 55 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 56 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 57 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 58 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 59 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 60 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 61 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 62 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+0: Memory status: 78% free
+connectNetworkSynapses
+Adding gap junctions.
+connectNetworkGapJunctionsLOCAL
+Finding node local gap junctions...
+0: Memory status: 78% free
+Adding external (cortical, thalamic) input from muscarinic-trial/input-spikes.hdf5
+0: Memory status: 78% free
+Adding somatic recordings
+0: Memory status: 78% free
+Running simulation for 4.0 s
+1% done. Elapsed: 61.0 s, estimated time left: 6037.3 s
+2% done. Elapsed: 122.6 s, estimated time left: 6007.6 s
+3% done. Elapsed: 178.4 s, estimated time left: 5767.9 s
+4% done. Elapsed: 234.5 s, estimated time left: 5627.5 s
+5% done. Elapsed: 294.4 s, estimated time left: 5593.8 s
+6% done. Elapsed: 367.3 s, estimated time left: 5755.1 s
+7% done. Elapsed: 436.3 s, estimated time left: 5797.1 s
+8% done. Elapsed: 494.0 s, estimated time left: 5680.6 s

@@ -1,4 +1,4 @@
-from .init import SnuddaInit
+from snudda.init import SnuddaInit
 from collections import OrderedDict
 import json
 import os
@@ -22,12 +22,12 @@ if __name__ == "__main__":
   #simName = "networks/3types-v2"
   # simName = "networks/SynTest-v6" # MSMS tuning
   #simName = "networks/SynTest-v15"  
-
+  nDensity=80.5e3*0.02
   configName= simName + "/network-config.json"
   cnc = SnuddaInit(structDef={},configName=configName,nChannels=1)
   #cnc.defineStriatum(nMSD1=500,nMSD2=500,nFS=0,nLTS=0,nChIN=30,volumeType="cube")  
   #cnc.defineStriatum(nMSD1=120,nMSD2=120,nFS=20,nLTS=0,nChIN=0,volumeType="slice")
-  cnc.defineStriatum(nMSD1=0,nMSD2=0,nFS=100,nLTS=100,nChIN=0,volumeType="slice")
+  cnc.defineStriatum(nMSD1=1,nMSD2=1,nFS=1,nLTS=30,nChIN=30,volumeType="cube",neuronDensity=nDensity) #To correct for the subtype your are interested in
   #cnc.defineStriatum(nMSD1=10,nMSD2=10,nFS=10,nLTS=10,nChIN=10,volumeType="slice")
   
   # cnc.defineStriatum(nMSD1=500,nMSD2=500,nFS=0,nLTS=0,nChIN=500,volumeType="cube")  

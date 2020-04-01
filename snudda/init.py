@@ -70,7 +70,7 @@ class SnuddaInit(object):
   ############################################################################
 
   # meshBinWidth is used when voxelising the mesh to determine which part of
-  # space is inside the mesh. For smaller structures we might need to use
+  # space is inside the mesh. For smaller structures we might need to useF80-.
   # a smaller meshBinWidth than the default 1e-4
 
   def defineStructure(self,
@@ -498,7 +498,7 @@ class SnuddaInit(object):
                      volumeType=None,
                      sideLen=None,
                      sliceDepth=None,
-                     cellSpecDir=None):
+                     cellSpecDir=None,neuronDensity=80500):
 
     getVal = lambda x : 0 if x is None else x
     if(nNeurons is None):
@@ -546,7 +546,7 @@ class SnuddaInit(object):
     elif(nNeurons <= 1e6): #1e6
       print("Using cube for striatum")
       # 1.73 million neurons, volume of allen striatal mesh is 21.5mm3
-      striatumVolume = 1e-9*(nNeurons)/80.5e3
+      striatumVolume = 1e-9*(nNeurons)/neuronDensity # 
       striatumSideLen = striatumVolume ** (1./3)
       striatumCentre = np.array([3540e-6,4645e-6,5081e-6])
 
@@ -963,7 +963,7 @@ class SnuddaInit(object):
     # Mamaligas, Ford 2016 -- connectivity, 2-5ChIN per MS (in slice)
 
     ChINgGABA = 1e-9 # If just one value given, then gSTD = 0
-    ChINgACh = 1e-9 # FIXME
+    ChINgACh = 1e-6 # FIXME
 
     # Run 1142 -- No mu2
     # Run 1150 -- Mu2 2.4
@@ -1011,7 +1011,7 @@ class SnuddaInit(object):
     # We got an increasing connection distribution with distance, looks fishy
     # !!! Should be ACh, lets try set it to GABA and see if that changes things
     # --- trying same pruning as for ChIN to MSD2
-    if(False):
+    if(True):
       self.addNeuronTarget(neuronName="ChIN",
                            targetName="LTS",
                            connectionType="ACh",
@@ -1019,9 +1019,9 @@ class SnuddaInit(object):
                            f1=0.5, softMax=None, mu2=10,a3=None, # SM 12
                            conductance=ChINgACh,
                            parameterFile=pfChINLTS,
-                           modFile="ACh", # !!! DOES NOT YET EXIST --- FIXME
-                           channelParamDictionary=None)
-
+                           modFile="concACh", # !!! DOES NOT YET EXIST --- FIXME
+                           channelParamDictionary= {"GPCR": {"neurotransmitter" : ("concACh" , "conc_ACH"),"signalling" : ("M4","Ach_M4R"),"ion_channel": [("gbar_kir23","muscarinic_modulation")]}})
+      
 
     # !!! USE SAME PARAMS FOR FS AS FOR MS??
 
@@ -1068,12 +1068,12 @@ class SnuddaInit(object):
 
     self.addNeuronTarget(neuronName="LTS",
                          targetName="ChIN",
-                         connectionType="GABA", # also NO, nitric oxide
+                         connectionType="NO", # also NO, nitric oxide
                          distPruning=None,
                          f1=0.5, softMax=10, mu2=3, a3=0.4,
                          conductance=LTSgGABA,
                          parameterFile=pfLTSChIN,
-                         modFile="tmGabaA",
+                         modFile="NO",
                          channelParamDictionary=None)
 
 
