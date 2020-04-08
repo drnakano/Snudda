@@ -1,18 +1,18 @@
 
 from snudda.plotting.Network_plot_spike_raster import NetworkPlotSpikeRaster
-
-fileName = "muscarinic-trial/simulation/network-output-spikes-666.txt"
-networkFile = "muscarinic-trial/network-pruned-synapses.hdf5"
+'''
+fileName = "da-no-ACh-thalamus-test/simulation/network-output-spikes-666.txt"
+networkFile = "da-no-ACh-thalamus-test/network-pruned-synapses.hdf5"
 endTime = 0.1
 npsr = NetworkPlotSpikeRaster(fileName,networkFile,skipTime=0.0,
                                   endTime=endTime,
-                                  typeOrder=["FSN","dSPN","LTS","iSPN","ChIN"])
+                                  typeOrder=["FSN","dSPN","LTS","iSPN","ChIN","DopaminergicAxon"])
 
-
+'''
 from snudda.plotting.Network_plot_traces import NetworkPlotTraces
 
-networkFile = "muscarinic-trial/network-pruned-synapses.hdf5"
-fileName = "muscarinic-trial/volt-out.csv"
+networkFile = "da-no-ACh-thalamus-test/network-pruned-synapses.hdf5"
+fileName = "da-no-ACh-thalamus-test/volt-out-b.csv"
 npt = NetworkPlotTraces(fileName,networkFile)
 
 

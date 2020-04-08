@@ -1,0 +1,14 @@
+Starting log file
+Using SlurmID: 89No IPYTHON_PROFILE enviroment variable set, running in serialUsing hdf5 version: latest
+Parsing configuration file da-no-ACh/network-config.json
+Using meshBinWidth 0.00033949878508594085
+Cube mesh, switching to serial processing.
+Using dimensions from config file
+Adding: 1 FSN_2
+Adding: 1 dSPN_1
+Adding: 1 iSPN_3
+Adding: 30 ChIN_0
+Adding: 30 LTS_0
+Re-sorting the neuron IDs after location
+Writing data to HDF5 file: da-no-ACh/network-neuron-positions.hdf5
+Program run time: 0.25253280700417235End of log. Closing file.

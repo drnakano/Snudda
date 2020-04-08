@@ -494,7 +494,8 @@ class SnuddaDetect(object):
     neuronGroup.create_dataset("hoc",(len(hocList),),'S100', hocList,
                                compression=self.h5compression)
 
-      
+    #import pdb
+    #pdb.set_trace()
     virtualNeuronList = np.array([n["virtualNeuron"] for n in self.neurons],
                                  dtype=bool)
     virtualNeuron = neuronGroup.create_dataset("virtualNeuron",
@@ -2034,6 +2035,8 @@ class SnuddaDetect(object):
                            / self.hyperVoxelWidth).astype(int)
         
       elif(neuron.axonDensityType == "r"):
+        #import pdb
+        #pdb.set_trace()
         # axonLoc = np.zeros((0,3))
 
         # We create a set of points corresponding approximately to the

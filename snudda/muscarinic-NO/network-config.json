@@ -365,22 +365,22 @@
       "rotationMode": "random",
       "volumeID": "Striatum"
     },
-    "dSPN_2": {
-      "morphology": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150917_c10_D1-mWT-P270-20-v20190521/WT-P270-20-15ak-cor.swc",
-      "parameters": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150917_c10_D1-mWT-P270-20-v20190521/parameters.json",
-      "mechanisms": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150917_c10_D1-mWT-P270-20-v20190521/mechanisms.json",
-      "modulation": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150917_c10_D1-mWT-P270-20-v20190521/modulation.json",
+    "dSPN_0": {
+      "morphology": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150602_c1_D1-mWT-0728MSN01-v20190508/WT-0728MSN01-cor-rep-ax.swc",
+      "parameters": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150602_c1_D1-mWT-0728MSN01-v20190508/parameters.json",
+      "mechanisms": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150602_c1_D1-mWT-0728MSN01-v20190508/mechanisms.json",
+      "modulation": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150602_c1_D1-mWT-0728MSN01-v20190508/modulation.json",
       "num": 1,
       "hoc": null,
       "neuronType": "neuron",
       "rotationMode": "random",
       "volumeID": "Striatum"
     },
-    "iSPN_2": {
-      "morphology": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150908_c4_D2-m51-5-DE-v20190611/51-5-DE-cor-rep-ax.swc",
-      "parameters": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150908_c4_D2-m51-5-DE-v20190611/parameters.json",
-      "mechanisms": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150908_c4_D2-m51-5-DE-v20190611/mechanisms.json",
-      "modulation": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150908_c4_D2-m51-5-DE-v20190611/modulation.json",
+    "iSPN_0": {
+      "morphology": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150917_c11_D2-mWT-MSN1-v20190603/WT-MSN1-cor-rep-ax.swc",
+      "parameters": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150917_c11_D2-mWT-MSN1-v20190603/parameters.json",
+      "mechanisms": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150917_c11_D2-mWT-MSN1-v20190603/mechanisms.json",
+      "modulation": "/home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e150917_c11_D2-mWT-MSN1-v20190603/modulation.json",
       "num": 1,
       "hoc": null,
       "neuronType": "neuron",

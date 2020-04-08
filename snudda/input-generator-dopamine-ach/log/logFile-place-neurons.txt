@@ -1,0 +1,24 @@
+Starting log file
+Using SlurmID: 243No IPYTHON_PROFILE enviroment variable set, running in serialUsing hdf5 version: latest
+Parsing configuration file input-generator-dopamine-ach/network-config.json
+Using meshBinWidth 0.00027087860285992686
+Cube mesh, switching to serial processing.
+Using dimensions from config file
+Using meshBinWidth 5e-05
+Cube mesh, switching to serial processing.
+Using dimensions from config file
+Adding: 1 FSN_1
+Adding: 2 dSPN_0
+Adding: 2 dSPN_1
+Adding: 3 dSPN_2
+Adding: 3 dSPN_3
+Adding: 2 iSPN_0
+Adding: 3 iSPN_1
+Adding: 2 iSPN_2
+Adding: 3 iSPN_3
+Adding: 1 ChIN_0
+Adding: 10 LTS_0
+Adding: 1 DopaminergicAxon_1
+Re-sorting the neuron IDs after location
+Writing data to HDF5 file: input-generator-dopamine-ach/network-neuron-positions.hdf5
+Program run time: 3.046555588953197End of log. Closing file.

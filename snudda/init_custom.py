@@ -27,7 +27,11 @@ if __name__ == "__main__":
   cnc = SnuddaInit(structDef={},configName=configName,nChannels=1)
   #cnc.defineStriatum(nMSD1=500,nMSD2=500,nFS=0,nLTS=0,nChIN=30,volumeType="cube")  
   #cnc.defineStriatum(nMSD1=120,nMSD2=120,nFS=20,nLTS=0,nChIN=0,volumeType="slice")
-  cnc.defineStriatum(nMSD1=1,nMSD2=1,nFS=1,nLTS=30,nChIN=30,volumeType="cube",neuronDensity=nDensity) #To correct for the subtype your are interested in
+  cnc.defineStriatum(nMSD1=10,nMSD2=10,nFS=1,nLTS=10,nChIN=1,volumeType="cube",neuronDensity=nDensity)
+  #cnc.defineThalamus(nNeurons=1)
+  #cnc.defineCortex(nNeurons=1)
+  cnc.defineSNc(nNeurons=1)
+  #To correct for the subtype your are interested in
   #cnc.defineStriatum(nMSD1=10,nMSD2=10,nFS=10,nLTS=10,nChIN=10,volumeType="slice")
   
   # cnc.defineStriatum(nMSD1=500,nMSD2=500,nFS=0,nLTS=0,nChIN=500,volumeType="cube")  

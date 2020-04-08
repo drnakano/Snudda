@@ -448,6 +448,10 @@ class Snudda(object):
 
     sim.checkMemoryStatus()  
     print("Running simulation for " + str(tSim) + " ms.")
+    sim.addSynapseFinalise()
+    sim.PCbarrier()
+    
+
     sim.run(tSim) # In milliseconds
 
     print("Simulation done, saving output")

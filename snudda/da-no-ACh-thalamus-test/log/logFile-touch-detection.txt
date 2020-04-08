@@ -1,0 +1,503 @@
+Starting log file
+Using SlurmID: 238No IPYTHON_PROFILE enviroment variable set, running in serialAlready have a log file setup, ignoring
+Using hdf5 driver version: latest
+{'total': 16234800, 'free': 8710196, 'used': 7524604}
+Each hyper voxel has 100 x 100 x 100 voxels
+Touch detecting all volumes
+Reading prototype for: FSN_0
+Reading prototype for: dSPN_0
+Reading prototype for: dSPN_1
+Reading prototype for: dSPN_2
+Reading prototype for: dSPN_3
+Reading prototype for: iSPN_0
+Reading prototype for: iSPN_1
+Reading prototype for: iSPN_2
+Reading prototype for: iSPN_3
+Reading prototype for: ChIN_0
+Setting axon density for neuron without axon
+Reading prototype for: LTS_0
+Setting axon density for neuron without axon
+Reading prototype for: DopaminergicAxon_2
+Setting axon density for neuron without axon
+Loading connectivity information
+{'total': 16234800, 'free': 8700524, 'used': 7534276}
+Reading positions from file: da-no-ACh-thalamus-test/network-neuron-positions.hdf5
+{'total': 16234800, 'free': 8700632, 'used': 7534168}
+Position file read.
+setupParallel called without dView, aborting.
+Removing old work history file
+Work history file: da-no-ACh-thalamus-test//log/network-detect-worklog.hdf5
+Writing metadata to work history file
+No dView specified, running distribute neurons in serial
+distributeNeurons: neuronIdx = [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43] (n=44)
+distributeNeurons: calculating min and max coords
+100 hyper voxels in total
+Pre allocation done.
+Calculated distribution of neurons: 0.804845180013217 seconds
+Writing neuron distribution history to file
+setupProcessHyperVoxelStateHistory: Creating new work history.
+Skipping 44 empty hyper voxels
+Processing hyper voxel : 26/100 (44 neurons)
+Trying to place 461448 points to get 3647.0 axon voxels filled
+Placing 12218 random axon points for ChIN_0
+Placing 7127436 random axon points for DopaminergicAxon_2
+placeSynapsesNoAxonSphere: 7.793359650997445s, hyperID: 26
+Create lookup table
+detectSynapses: 4857 took 0.2562157750071492s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 26 (4857 synapses, 0 gap junctions)
+HyperID 26 completed - 4857 synapses and 0 gap junctions found (29.22825584799284s)
+Processing hyper voxel : 27/100 (34 neurons)
+Bounding box appears to be outside hyper voxel
+Placing 12218 random axon points for ChIN_0(cached)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.914750569005264s, hyperID: 27
+Create lookup table
+detectSynapses: 105 took 0.013449899008264765s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 27 (105 synapses, 0 gap junctions)
+HyperID 27 completed - 105 synapses and 0 gap junctions found (16.281410159019288s)
+Processing hyper voxel : 6/100 (29 neurons)
+Trying to place 546115 points to get 2821.0 axon voxels filled
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.1297254270175472s, hyperID: 6
+Create lookup table
+detectSynapses: 76 took 0.019566635019145906s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 6 (76 synapses, 0 gap junctions)
+HyperID 6 completed - 76 synapses and 0 gap junctions found (10.374791598995216s)
+Processing hyper voxel : 46/100 (29 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.285799695993774s, hyperID: 46
+Create lookup table
+detectSynapses: 199 took 0.01807474999804981s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 46 (199 synapses, 0 gap junctions)
+HyperID 46 completed - 199 synapses and 0 gap junctions found (16.37662785500288s)
+Processing hyper voxel : 21/100 (29 neurons)
+Trying to place 212039 points to get 1615.0 axon voxels filled
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.0794409399968572s, hyperID: 21
+Create lookup table
+detectSynapses: 1115 took 0.09002203700947575s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 21 (1115 synapses, 0 gap junctions)
+HyperID 21 completed - 1115 synapses and 0 gap junctions found (12.501726450980641s)
+Processing hyper voxel : 31/100 (21 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.023580813984153792s, hyperID: 31
+Create lookup table
+detectSynapses: 36 took 0.009481537999818102s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 31 (36 synapses, 0 gap junctions)
+HyperID 31 completed - 36 synapses and 0 gap junctions found (6.311547863006126s)
+Processing hyper voxel : 25/100 (21 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.032093614019686356s, hyperID: 25
+Create lookup table
+detectSynapses: 65 took 0.01095525998971425s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 25 (65 synapses, 0 gap junctions)
+HyperID 25 completed - 65 synapses and 0 gap junctions found (7.44232020599884s)
+Processing hyper voxel : 41/100 (17 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.764985888992669s, hyperID: 41
+Create lookup table
+detectSynapses: 21 took 0.008467748994007707s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 41 (21 synapses, 0 gap junctions)
+HyperID 41 completed - 21 synapses and 0 gap junctions found (12.144454371999018s)
+Processing hyper voxel : 1/100 (16 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.009841833001701161s, hyperID: 1
+Create lookup table
+detectSynapses: 1 took 0.007384597993222997s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 1 (1 synapses, 0 gap junctions)
+HyperID 1 completed - 1 synapses and 0 gap junctions found (5.250386885978514s)
+Processing hyper voxel : 22/100 (15 neurons)
+Trying to place 12656 points to get 3.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.001738114980980754s, hyperID: 22
+Create lookup table
+detectSynapses: 2 took 0.007110459002433345s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 22 (2 synapses, 0 gap junctions)
+HyperID 22 completed - 2 synapses and 0 gap junctions found (3.667085905006388s)
+Processing hyper voxel : 20/100 (14 neurons)
+Trying to place 7857 points to get 6.0 axon voxels filled
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.011950037005590275s, hyperID: 20
+Create lookup table
+detectSynapses: 3 took 0.007724923983914778s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 20 (3 synapses, 0 gap junctions)
+HyperID 20 completed - 3 synapses and 0 gap junctions found (4.947619463986484s)
+Processing hyper voxel : 47/100 (14 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.264614002022427s, hyperID: 47
+Create lookup table
+detectSynapses: 21 took 0.009319272998254746s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 47 (21 synapses, 0 gap junctions)
+HyperID 47 completed - 21 synapses and 0 gap junctions found (11.048476227995707s)
+Processing hyper voxel : 45/100 (12 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.157687188999262s, hyperID: 45
+Create lookup table
+detectSynapses: 0 took 0.008203049015719444s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 45 (0 synapses, 0 gap junctions)
+HyperID 45 completed - 0 synapses and 0 gap junctions found (9.296465241000988s)
+Processing hyper voxel : 7/100 (12 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.010040833993116394s, hyperID: 7
+Create lookup table
+detectSynapses: 2 took 0.007585061975987628s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 7 (2 synapses, 0 gap junctions)
+HyperID 7 completed - 2 synapses and 0 gap junctions found (3.9348164469993208s)
+Processing hyper voxel : 5/100 (12 neurons)
+Trying to place 516935 points to get 7854.0 axon voxels filled
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.19901564699830487s, hyperID: 5
+Create lookup table
+detectSynapses: 37 took 0.009539989026961848s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 5 (37 synapses, 0 gap junctions)
+HyperID 5 completed - 37 synapses and 0 gap junctions found (3.179547867999645s)
+Processing hyper voxel : 32/100 (12 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.011377688002539799s, hyperID: 32
+Create lookup table
+detectSynapses: 3 took 0.008336593018611893s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 32 (3 synapses, 0 gap junctions)
+HyperID 32 completed - 3 synapses and 0 gap junctions found (2.7334252889850177s)
+Processing hyper voxel : 51/100 (11 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.583274718024768s, hyperID: 51
+Create lookup table
+detectSynapses: 13 took 0.008221830998081714s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 51 (13 synapses, 0 gap junctions)
+HyperID 51 completed - 13 synapses and 0 gap junctions found (10.449081055005081s)
+Processing hyper voxel : 11/100 (10 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.011008703004335985s, hyperID: 11
+Create lookup table
+detectSynapses: 5 took 0.009600460005458444s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 11 (5 synapses, 0 gap junctions)
+HyperID 11 completed - 5 synapses and 0 gap junctions found (3.201593462988967s)
+Processing hyper voxel : 30/100 (8 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.025262845010729507s, hyperID: 30
+Create lookup table
+detectSynapses: 2 took 0.008452821988612413s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 30 (2 synapses, 0 gap junctions)
+HyperID 30 completed - 2 synapses and 0 gap junctions found (2.8318307060108054s)
+Processing hyper voxel : 42/100 (7 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.909146421996411s, hyperID: 42
+Create lookup table
+detectSynapses: 3 took 0.008941432985011488s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 42 (3 synapses, 0 gap junctions)
+HyperID 42 completed - 3 synapses and 0 gap junctions found (10.45238674900611s)
+Processing hyper voxel : 0/100 (7 neurons)
+Trying to place 12683 points to get 27.0 axon voxels filled
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.014774324983591214s, hyperID: 0
+Create lookup table
+detectSynapses: 1 took 0.007399544992949814s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 0 (1 synapses, 0 gap junctions)
+HyperID 0 completed - 1 synapses and 0 gap junctions found (1.6706415860098787s)
+Processing hyper voxel : 12/100 (5 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.00936667001224123s, hyperID: 12
+Create lookup table
+detectSynapses: 0 took 0.0069644179893657565s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 12 (0 synapses, 0 gap junctions)
+HyperID 12 completed - 0 synapses and 0 gap junctions found (1.1666281420039013s)
+Processing hyper voxel : 10/100 (5 neurons)
+Trying to place 436895 points to get 244.0 axon voxels filled
+Placing 12218 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.07719763100612909s, hyperID: 10
+Create lookup table
+detectSynapses: 0 took 0.012467380001908168s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 10 (0 synapses, 0 gap junctions)
+HyperID 10 completed - 0 synapses and 0 gap junctions found (0.8496438479924109s)
+Processing hyper voxel : 50/100 (5 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.787703773996327s, hyperID: 50
+Create lookup table
+detectSynapses: 0 took 0.007496292993891984s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 50 (0 synapses, 0 gap junctions)
+HyperID 50 completed - 0 synapses and 0 gap junctions found (8.027261495997664s)
+Processing hyper voxel : 40/100 (5 neurons)
+Placing 12218 random axon points for ChIN_0(cached)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.1675079579872545s, hyperID: 40
+Create lookup table
+detectSynapses: 0 took 0.007500259001972154s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 40 (0 synapses, 0 gap junctions)
+HyperID 40 completed - 0 synapses and 0 gap junctions found (6.954343588993652s)
+Processing hyper voxel : 2/100 (3 neurons)
+Create lookup table
+detectSynapses: 0 took 0.008158238983014598s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 2 (0 synapses, 0 gap junctions)
+HyperID 2 completed - 0 synapses and 0 gap junctions found (0.6296526719816029s)
+Processing hyper voxel : 48/100 (2 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.483988807973219s, hyperID: 48
+Create lookup table
+detectSynapses: 0 took 0.009126160992309451s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 48 (0 synapses, 0 gap junctions)
+HyperID 48 completed - 0 synapses and 0 gap junctions found (8.007983028976014s)
+Processing hyper voxel : 52/100 (2 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 8.884519404004095s, hyperID: 52
+Create lookup table
+detectSynapses: 0 took 0.007037028990453109s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 52 (0 synapses, 0 gap junctions)
+HyperID 52 completed - 0 synapses and 0 gap junctions found (9.313419660000363s)
+Processing hyper voxel : 43/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.65988705001655s, hyperID: 43
+Create lookup table
+detectSynapses: 0 took 0.008061037020524964s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 43 (0 synapses, 0 gap junctions)
+HyperID 43 completed - 0 synapses and 0 gap junctions found (6.727799446001882s)
+Processing hyper voxel : 78/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.675126514979638s, hyperID: 78
+Create lookup table
+detectSynapses: 0 took 0.007526519999373704s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 78 (0 synapses, 0 gap junctions)
+HyperID 78 completed - 0 synapses and 0 gap junctions found (6.764175310992869s)
+Processing hyper voxel : 81/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.0852561139909085s, hyperID: 81
+Create lookup table
+detectSynapses: 0 took 0.007003021979471669s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 81 (0 synapses, 0 gap junctions)
+HyperID 81 completed - 0 synapses and 0 gap junctions found (7.151016437012004s)
+Processing hyper voxel : 82/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.431538075004937s, hyperID: 82
+Create lookup table
+detectSynapses: 0 took 0.007178515021223575s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 82 (0 synapses, 0 gap junctions)
+HyperID 82 completed - 0 synapses and 0 gap junctions found (7.496137943991926s)
+Processing hyper voxel : 83/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.583050996006932s, hyperID: 83
+Create lookup table
+detectSynapses: 0 took 0.008110735972877592s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 83 (0 synapses, 0 gap junctions)
+HyperID 83 completed - 0 synapses and 0 gap junctions found (7.6497787490079645s)
+Processing hyper voxel : 88/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.036984146019677s, hyperID: 88
+Create lookup table
+detectSynapses: 0 took 0.007590779016027227s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 88 (0 synapses, 0 gap junctions)
+HyperID 88 completed - 0 synapses and 0 gap junctions found (7.1143261570250615s)
+Processing hyper voxel : 86/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.236572566995164s, hyperID: 86
+Create lookup table
+detectSynapses: 0 took 0.0070337479992304s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 86 (0 synapses, 0 gap junctions)
+HyperID 86 completed - 0 synapses and 0 gap junctions found (7.31795808399329s)
+Processing hyper voxel : 87/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.7257725819945335s, hyperID: 87
+Create lookup table
+detectSynapses: 0 took 0.010002624010667205s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 87 (0 synapses, 0 gap junctions)
+HyperID 87 completed - 0 synapses and 0 gap junctions found (7.7956086120102555s)
+Processing hyper voxel : 77/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.596414907980943s, hyperID: 77
+Create lookup table
+detectSynapses: 0 took 0.006998625991400331s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 77 (0 synapses, 0 gap junctions)
+HyperID 77 completed - 0 synapses and 0 gap junctions found (7.685059053008445s)
+Processing hyper voxel : 90/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.893097538006259s, hyperID: 90
+Create lookup table
+detectSynapses: 0 took 0.00745418798760511s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 90 (0 synapses, 0 gap junctions)
+HyperID 90 completed - 0 synapses and 0 gap junctions found (6.958514483005274s)
+Processing hyper voxel : 91/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.878709284996148s, hyperID: 91
+Create lookup table
+detectSynapses: 0 took 0.00717091400292702s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 91 (0 synapses, 0 gap junctions)
+HyperID 91 completed - 0 synapses and 0 gap junctions found (7.943695225985721s)
+Processing hyper voxel : 85/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.1441516970226076s, hyperID: 85
+Create lookup table
+detectSynapses: 0 took 0.007213949982542545s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 85 (0 synapses, 0 gap junctions)
+HyperID 85 completed - 0 synapses and 0 gap junctions found (6.209103622008115s)
+Processing hyper voxel : 76/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.674472131009679s, hyperID: 76
+Create lookup table
+detectSynapses: 0 took 0.00808005899307318s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 76 (0 synapses, 0 gap junctions)
+HyperID 76 completed - 0 synapses and 0 gap junctions found (6.740802414016798s)
+Processing hyper voxel : 70/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 7.335736992012244s, hyperID: 70
+Create lookup table
+detectSynapses: 0 took 0.0071062610077206045s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 70 (0 synapses, 0 gap junctions)
+HyperID 70 completed - 0 synapses and 0 gap junctions found (7.412141856999369s)
+Processing hyper voxel : 72/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 9.474044427013723s, hyperID: 72
+Create lookup table
+detectSynapses: 0 took 0.007472066004993394s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 72 (0 synapses, 0 gap junctions)
+HyperID 72 completed - 0 synapses and 0 gap junctions found (9.540289778000442s)
+Processing hyper voxel : 71/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 10.918126570002642s, hyperID: 71
+Create lookup table
+detectSynapses: 0 took 0.00754062199848704s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 71 (0 synapses, 0 gap junctions)
+HyperID 71 completed - 0 synapses and 0 gap junctions found (10.988544822001131s)
+Processing hyper voxel : 68/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 14.720521717012161s, hyperID: 68
+Create lookup table
+detectSynapses: 0 took 0.009003233019029722s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 68 (0 synapses, 0 gap junctions)
+HyperID 68 completed - 0 synapses and 0 gap junctions found (14.792716636002297s)
+Processing hyper voxel : 67/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 12.390656656993087s, hyperID: 67
+Create lookup table
+detectSynapses: 0 took 0.008008203003555536s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 67 (0 synapses, 0 gap junctions)
+HyperID 67 completed - 0 synapses and 0 gap junctions found (12.472896542021772s)
+Processing hyper voxel : 66/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 14.364901344990358s, hyperID: 66
+Create lookup table
+detectSynapses: 0 took 0.007213242002762854s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 66 (0 synapses, 0 gap junctions)
+HyperID 66 completed - 0 synapses and 0 gap junctions found (14.436513731023297s)
+Processing hyper voxel : 65/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 9.424020167993149s, hyperID: 65
+Create lookup table
+detectSynapses: 0 took 0.007266698987223208s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 65 (0 synapses, 0 gap junctions)
+HyperID 65 completed - 0 synapses and 0 gap junctions found (9.488856801006477s)
+Processing hyper voxel : 63/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 9.386733781982912s, hyperID: 63
+Create lookup table
+detectSynapses: 0 took 0.007198740990133956s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 63 (0 synapses, 0 gap junctions)
+HyperID 63 completed - 0 synapses and 0 gap junctions found (9.466902206011582s)
+Processing hyper voxel : 62/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 10.187770366988843s, hyperID: 62
+Create lookup table
+detectSynapses: 0 took 0.0072568070027045906s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 62 (0 synapses, 0 gap junctions)
+HyperID 62 completed - 0 synapses and 0 gap junctions found (10.274925603996962s)
+Processing hyper voxel : 61/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 9.104484911018517s, hyperID: 61
+Create lookup table
+detectSynapses: 0 took 0.00717277399962768s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 61 (0 synapses, 0 gap junctions)
+HyperID 61 completed - 0 synapses and 0 gap junctions found (9.172437889006687s)
+Processing hyper voxel : 60/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.594305976992473s, hyperID: 60
+Create lookup table
+detectSynapses: 0 took 0.007337121991440654s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 60 (0 synapses, 0 gap junctions)
+HyperID 60 completed - 0 synapses and 0 gap junctions found (6.663776806002716s)
+Processing hyper voxel : 53/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.823475101002259s, hyperID: 53
+Create lookup table
+detectSynapses: 0 took 0.007190955977421254s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 53 (0 synapses, 0 gap junctions)
+HyperID 53 completed - 0 synapses and 0 gap junctions found (6.893431733013131s)
+Processing hyper voxel : 92/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 8.274182942986954s, hyperID: 92
+Create lookup table
+detectSynapses: 0 took 0.008466283994494006s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 92 (0 synapses, 0 gap junctions)
+HyperID 92 completed - 0 synapses and 0 gap junctions found (8.345041901018703s)
+Processing hyper voxel : 73/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 8.723569790017791s, hyperID: 73
+Create lookup table
+detectSynapses: 0 took 0.007150255027227104s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 73 (0 synapses, 0 gap junctions)
+HyperID 73 completed - 0 synapses and 0 gap junctions found (8.795041250006761s)
+Processing hyper voxel : 93/100 (1 neurons)
+Placing 7127436 random axon points for DopaminergicAxon_2(cached)
+placeSynapsesNoAxonSphere: 6.763333049981156s, hyperID: 93
+Create lookup table
+detectSynapses: 0 took 0.0071900720067787915s
+detectGapJunctions: No gap junctions defined in connectivity rules
+Wrote hyper voxel 93 (0 synapses, 0 gap junctions)
+HyperID 93 completed - 0 synapses and 0 gap junctions found (6.8317210269742645s)
+Program run time: 458.5772911859967End of log. Closing file.

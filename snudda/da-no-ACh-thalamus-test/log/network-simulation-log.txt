@@ -1,0 +1,140 @@
+Using networkFile: da-no-ACh-thalamus-test/network-pruned-synapses.hdf5
+Using inputFile: da-no-ACh-thalamus-test/input-spikes.hdf5
+Using logFile: da-no-ACh-thalamus-test/log/network-simulation-log.txt
+Worker 0: Loading network from da-no-ACh-thalamus-test/network-pruned-synapses.hdf5
+Loading config file da-no-ACh-thalamus-test/network-config.json
+0: Memory status: 71% free
+Distributing neurons.
+Setup neurons
+Node 0 - cell 0 dSPN_1
+Neuron dSPN_1 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 1 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 2 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 3 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 4 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 5 dSPN_1
+Neuron dSPN_1 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 6 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 7 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 8 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 9 iSPN_0
+Neuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 10 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 11 dSPN_0
+Neuron dSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 12 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 13 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 14 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 15 dSPN_1
+Neuron dSPN_1 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 16 dSPN_0
+Neuron dSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 17 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 18 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 19 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 20 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 21 iSPN_0
+Neuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 22 dSPN_1
+Neuron dSPN_1 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 23 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 24 iSPN_0
+Neuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 25 dSPN_0
+Neuron dSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 26 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 27 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 28 FSN_0
+Neuron FSN_0 resting voltage = -91.1
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 29 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 30 iSPN_0
+Neuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 31 iSPN_0
+Neuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 32 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 33 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 34 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 35 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 36 dSPN_0
+Neuron dSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 37 dSPN_0
+Neuron dSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 38 dSPN_1
+Neuron dSPN_1 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 39 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 40 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 41 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 42 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Using da-no-ACh-thalamus-test/input-spikes.hdf5 for virtual neurons
+0: Memory status: 70% free
+connectNetworkSynapses

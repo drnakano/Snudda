@@ -1,0 +1,108 @@
+Using networkFile: input-generator-dopamine-ach/network-pruned-synapses.hdf5
+Using inputFile: input-generator-dopamine-ach/input-spikes.hdf5
+Using logFile: input-generator-dopamine-ach/log/network-simulation-log.txt
+Worker 0: Loading network from input-generator-dopamine-ach/network-pruned-synapses.hdf5
+Loading config file input-generator-dopamine-ach/network-config.json
+0: Memory status: 60% free
+Distributing neurons.
+Setup neurons
+Node 0 - cell 0 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 1 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 2 dSPN_0
+Neuron dSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 3 dSPN_1
+Neuron dSPN_1 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 4 dSPN_0
+Neuron dSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 5 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 6 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 7 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 8 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 9 dSPN_1
+Neuron dSPN_1 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 10 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 11 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 12 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Using input-generator-dopamine-ach/input-spikes.hdf5 for virtual neurons
+Node 0 - cell 14 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 15 iSPN_0
+Neuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 16 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 17 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 18 iSPN_0
+Neuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 19 FSN_1
+Neuron FSN_1 resting voltage = -85
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 20 iSPN_3
+Neuron iSPN_3 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 21 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 22 dSPN_3
+Neuron dSPN_3 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 23 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 24 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 25 iSPN_1
+Neuron iSPN_1 resting voltage = -83
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 26 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 27 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 28 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 29 dSPN_2
+Neuron dSPN_2 resting voltage = -87
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 30 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 31 iSPN_2
+Neuron iSPN_2 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 32 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+0: Memory status: 60% free
+connectNetworkSynapses
+ Adding GPCR synapses

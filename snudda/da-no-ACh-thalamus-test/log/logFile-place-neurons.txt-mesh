@@ -1,0 +1,51 @@
+Found old cache file (da-no-ACh-thalamus-test/mesh/Striatum-cube-mesh-0.00029891487431077526.obj-298-cache.pickle), ignoring.
+Running in serial
+Voxel mask: 6x5x6
+Processing x = 0
+Processing x = 1
+Processing x = 2
+Processing x = 3
+Processing x = 4
+Processing x = 5
+Fraction of border voxels: 0.0
+Saving mesh cache file da-no-ACh-thalamus-test/mesh/Striatum-cube-mesh-0.00029891487431077526.obj-298-cache.pickle
+Calculation time: 0.021798998001031578 s
+Setup voxel list
+Setup place neurons
+Update padding mask
+Regenerating new random pool
+Setup done
+Inner voxel bin volume: 0.0 mm³
+Found old cache file (da-no-ACh-thalamus-test/mesh/SNc-cube-mesh-0.0002.obj-50-cache.pickle), ignoring.
+Running in serial
+Voxel mask: 9x9x9
+Processing x = 0
+Processing x = 1
+Processing x = 2
+Processing x = 3
+Processing x = 4
+Processing x = 5
+Processing x = 6
+Processing x = 7
+Processing x = 8
+Fraction of border voxels: 0.0
+Saving mesh cache file da-no-ACh-thalamus-test/mesh/SNc-cube-mesh-0.0002.obj-50-cache.pickle
+Calculation time: 0.11889141399296932 s
+Setup voxel list
+Setup place neurons
+Update padding mask
+Regenerating new random pool
+Setup done
+Inner voxel bin volume: 0.0 mm³
+Placed 1 in 0.0013542160158976912 s
+Placed 5 in 0.01125769701320678 s
+Placed 5 in 0.01675397000508383 s
+Placed 5 in 0.015796573978150263 s
+Placed 5 in 0.010030660982010886 s
+Placed 5 in 0.008066028996836394 s
+Placed 5 in 0.020146766997640952 s
+Placed 5 in 0.026576353004202247 s
+Placed 5 in 0.023961685015819967 s
+Placed 1 in 0.004378809011541307 s
+Placed 1 in 0.0014321990020107478 s
+Placed 1 in 0.0013448910031002015 s

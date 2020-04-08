@@ -1,0 +1,68 @@
+Starting log file
+Using SlurmID: 99No IPYTHON_PROFILE enviroment variable set, running in serialSetting random seed: None
+Using hdf5 driver sec2, latest version
+Opening work history file: da-no-ACh-10000/log/network-detect-worklog.hdf5
+Using default scratch path: da-no-ACh-10000//temp/
+Checking for merge file da-no-ACh-10000//network-putative-synapses-MERGED.hdf5
+Running merge in serial
+Doing bigMerge (lookup) for synapses
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-21.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-20.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-25.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-5.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-37.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-22.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-17.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-4.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-24.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-36.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-1.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-16.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-9.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-6.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-41.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-26.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-18.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-8.hdf5
+Opening voxel file: da-no-ACh-10000//voxels/network-putative-synapses-40.hdf5
+Setting up out file da-no-ACh-10000//network-putative-synapses-MERGED.hdf5
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/fs/str-fs-e180418_FS5-mMTC251001A-IDB-v20190301/MTC251001A-IDB-cor-rep.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150602_c1_D1-mWT-0728MSN01-v20190508/WT-0728MSN01-cor-rep-ax.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e151123_c1_D2-mWT-P270-09-v20190527/WT-P270-09-15ak-cor.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/chin/str-chin-e170614_cell6-m17JUL301751_170614_no6_MD_cell_1_x63-v20190710/17JUL301751_170614_no6_MD_cell_1_x63-cor-noaxon.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/lts/LTS_Experiment-9862_20181211/lts_morp_2019-11-07_centered_noAxon.swc
+maxAxonVoxelCtr = 5
+maxDendVoxelCtr = 4
+Synapses: 1/6713 (heap size: 18)
+Flushing da-no-ACh-10000//network-putative-synapses-MERGED.hdf5 data: network/synapses
+network/synapses new size (6713, 13)
+bigMergeLookup: done
+Doing bigMerge (lookup) for gapJunctions
+pruneSynapses called.
+pruneSynapses: synapseFile=<HDF5 file "network-putative-synapses-MERGED.hdf5" (mode None)>, outputFileName=None, rowRange=None (synapses)
+About to calculate block ranges (1 blocks)
+Find block ranges. From 0 to 6713 block size 6713
+synapseRange=[(0, 6713)]
+blockRanges=[(0, 6713)]
+Writing to da-no-ACh-10000//network-pruned-synapses.hdf5
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/fs/str-fs-e180418_FS5-mMTC251001A-IDB-v20190301/MTC251001A-IDB-cor-rep.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/dspn/str-dspn-e150602_c1_D1-mWT-0728MSN01-v20190508/WT-0728MSN01-cor-rep-ax.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/ispn/str-ispn-e151123_c1_D2-mWT-P270-09-v20190527/WT-P270-09-15ak-cor.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/chin/str-chin-e170614_cell6-m17JUL301751_170614_no6_MD_cell_1_x63-v20190710/17JUL301751_170614_no6_MD_cell_1_x63-cor-noaxon.swc
+Saving morphology in HDF5 file: /home/jofrony/Documents/Projects/Microcircuit-Simulations/Snudda-master/Snudda/snudda/data/cellspecs/lts/LTS_Experiment-9862_20181211/lts_morp_2019-11-07_centered_noAxon.swc
+Pruning range : (0, 6713)
+Number of synapses removed where synapse connection not allowed: 0
+Number of synapses removed due to distance dependent pruning: 40
+Number of synapses removed randomly: 794
+Number of synapses removed due to too many synapses between connected pair: 151
+Number of synapses removed due to too few synapses between connected pairs: 42
+Number of synapses removed where all synapses between pairs are removed: 3986
+pruneSynapses called.
+pruneSynapses: No gapJunctions skipping pruning
+Voxel overflows: 0 (should be zero)
+Synapses before pruning: 6713
+Synapses after pruning: 1700 (25.32 % kept)
+No gap junctions to prune.
+Cleaning up old merge files
+Total duration: 0.17361718500615098
+Program run time: 0.2302855570014799End of log. Closing file.

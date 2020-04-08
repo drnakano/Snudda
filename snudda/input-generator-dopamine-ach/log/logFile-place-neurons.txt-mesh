@@ -1,0 +1,50 @@
+No mesh cache file found (input-generator-dopamine-ach/mesh/Striatum-cube-mesh-0.00027087860285992686.obj-270-cache.pickle)
+Running in serial
+Voxel mask: 6x5x6
+Processing x = 0
+Processing x = 1
+Processing x = 2
+Processing x = 3
+Processing x = 4
+Processing x = 5
+Fraction of border voxels: 0.0
+Saving mesh cache file input-generator-dopamine-ach/mesh/Striatum-cube-mesh-0.00027087860285992686.obj-270-cache.pickle
+Calculation time: 0.010274760017637163 s
+Setup voxel list
+Setup place neurons
+Update padding mask
+Regenerating new random pool
+Setup done
+Inner voxel bin volume: 0.0 mm³
+No mesh cache file found (input-generator-dopamine-ach/mesh/SNc-cube-mesh-0.0002.obj-50-cache.pickle)
+Running in serial
+Voxel mask: 8x9x9
+Processing x = 0
+Processing x = 1
+Processing x = 2
+Processing x = 3
+Processing x = 4
+Processing x = 5
+Processing x = 6
+Processing x = 7
+Fraction of border voxels: 0.0
+Saving mesh cache file input-generator-dopamine-ach/mesh/SNc-cube-mesh-0.0002.obj-50-cache.pickle
+Calculation time: 0.0424985209829174 s
+Setup voxel list
+Setup place neurons
+Update padding mask
+Regenerating new random pool
+Setup done
+Inner voxel bin volume: 0.0 mm³
+Placed 1 in 0.0035300799645483494 s
+Placed 2 in 0.002680238976608962 s
+Placed 2 in 0.0038284999900497496 s
+Placed 3 in 0.0011916759540326893 s
+Placed 3 in 0.007150656019803137 s
+Placed 2 in 0.004872396995779127 s
+Placed 3 in 0.014096719038207084 s
+Placed 2 in 0.009405625984072685 s
+Placed 3 in 0.009189573000185192 s
+Placed 1 in 0.0013201580150052905 s
+Placed 10 in 0.02720609400421381 s
+Placed 1 in 0.0002451320178806782 s

@@ -93,13 +93,16 @@ class SnuddaPlace(object):
                  axonDensity=None):
 
     assert volumeID is not None, "You must specify a volume for neuron " + name
-
+    
     nm = NeuronMorphology(swc_filename=swc_filename,
                           param_data=param_data,
                           mech_filename=mech_filename,
                           name=name,
                           hoc=hoc,
-                          virtualNeuron=virtualNeuron)
+                          virtualNeuron=virtualNeuron,verbose=True,useCache=False,colour='b')
+    #nm.plotNeuron()
+    #import pdb
+    #pdb.set_trace()
 
     neuronType = name.split("_")[0]
     neuronCoords = self.volume[volumeID]["mesh"].placeNeurons(nNeurons,
@@ -211,7 +214,7 @@ class SnuddaPlace(object):
         else:
           dView = self.dView
           lbView = self.lbView
-
+	
         self.volume[volumeID]["mesh"] \
           =  RegionMesh(volDef["meshFile"],
                         dView=dView,
@@ -220,6 +223,8 @@ class SnuddaPlace(object):
                         dMin=volDef["dMin"],
                         binWidth=meshBinWidth,
                         logFile=meshLogFile)
+        #import pdb
+        #pdb.set_trace()
 
       self.writeLog("Using dimensions from config file")
 

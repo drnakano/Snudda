@@ -1,22 +1,25 @@
 Starting log file
-Using SlurmID: 63No IPYTHON_PROFILE enviroment variable set, running in serialAlready have a log file setup, ignoring
+Using SlurmID: 72No IPYTHON_PROFILE enviroment variable set, running in serialAlready have a log file setup, ignoring
 Using hdf5 driver version: latest
-{'total': 16234868, 'free': 12896248, 'used': 3338620}
+{'total': 16234868, 'free': 12123408, 'used': 4111460}
 Each hyper voxel has 100 x 100 x 100 voxels
 Touch detecting all volumes
+Removing old files muscarinic-NO/network-putative-synapses-MERGED.hdf5
+Removing old files muscarinic-NO/network-pruned-synapses.hdf5
 Reading prototype for: FSN_2
-Reading prototype for: dSPN_2
-Reading prototype for: iSPN_2
+Reading prototype for: dSPN_0
+Reading prototype for: iSPN_0
 Reading prototype for: ChIN_0
 Setting axon density for neuron without axon
 Reading prototype for: LTS_0
 Setting axon density for neuron without axon
 Loading connectivity information
-{'total': 16234868, 'free': 12884220, 'used': 3350648}
+{'total': 16234868, 'free': 12111128, 'used': 4123740}
 Reading positions from file: muscarinic-NO/network-neuron-positions.hdf5
-{'total': 16234868, 'free': 12883988, 'used': 3350880}
+{'total': 16234868, 'free': 12111128, 'used': 4123740}
 Position file read.
 setupParallel called without dView, aborting.
+Removing old work history file
 Work history file: muscarinic-NO//log/network-detect-worklog.hdf5
 Writing metadata to work history file
 No dView specified, running distribute neurons in serial
@@ -26,160 +29,150 @@ distributeNeurons: neuronIdx = [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 
 distributeNeurons: calculating min and max coords
 80 hyper voxels in total
 Pre allocation done.
-Calculated distribution of neurons: 0.5036414899514057 seconds
+Calculated distribution of neurons: 0.5277228300110437 seconds
 Writing neuron distribution history to file
 setupProcessHyperVoxelStateHistory: Creating new work history.
-Skipping 33 empty hyper voxels
-Processing hyper voxel : 25/80 (60 neurons)
+Skipping 34 empty hyper voxels
+Processing hyper voxel : 21/80 (59 neurons)
 Placing 40727 random axon points for ChIN_0
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 424037 points to get 3090.0 axon voxels filled
+Trying to place 137509 points to get 300.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 494140 points to get 3987.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 144484 points to get 806.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 539887 points to get 10362.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 472173 points to get 4450.0 axon voxels filled
+Trying to place 360838 points to get 2739.0 axon voxels filled
+Trying to place 63881 points to get 54.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 342059 points to get 3975.0 axon voxels filled
+Trying to place 462700 points to get 4823.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 187401 points to get 1192.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 247613 points to get 445.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 132071 points to get 721.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 503151 points to get 6926.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 64754 points to get 128.0 axon voxels filled
+Trying to place 367239 points to get 3040.0 axon voxels filled
+Trying to place 263698 points to get 1657.0 axon voxels filled
+Trying to place 546856 points to get 7546.0 axon voxels filled
+Trying to place 503609 points to get 5340.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 54157 points to get 151.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 519292 points to get 5823.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 187450 points to get 1029.0 axon voxels filled
+Trying to place 302245 points to get 2104.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 389085 points to get 3849.0 axon voxels filled
+Trying to place 154250 points to get 602.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 105593 points to get 323.0 axon voxels filled
+Trying to place 300070 points to get 2079.0 axon voxels filled
+Trying to place 11950 points to get 57.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 4.5944343759911135s, hyperID: 21
+Create lookup table
+detectSynapses: 3903 took 0.1862152009853162s
+Create lookup table
+detectGapJunctions: 0.28907000698382035s
+Wrote hyper voxel 21 (3903 synapses, 0 gap junctions)
+HyperID 21 completed - 3903 synapses and 0 gap junctions found (10.232735929021146s)
+Processing hyper voxel : 20/80 (56 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 2613 points to get 7.0 axon voxels filled
+Trying to place 48879 points to get 19.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Bounding box appears to be outside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 520803 points to get 5874.0 axon voxels filled
+Trying to place 508897 points to get 2248.0 axon voxels filled
+Trying to place 515553 points to get 9796.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 49091 points to get 372.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 418436 points to get 4113.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 551981 points to get 10204.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 186859 points to get 1002.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 243392 points to get 1231.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 239745 points to get 1592.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 487673 points to get 5909.0 axon voxels filled
+Trying to place 319361 points to get 1928.0 axon voxels filled
+Trying to place 8895 points to get 54.0 axon voxels filled
 Too little of axon appears to be inside hyper voxel
-Trying to place 127569 points to get 548.0 axon voxels filled
-Trying to place 462451 points to get 4961.0 axon voxels filled
+Trying to place 121718 points to get 220.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 174240 points to get 822.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 287947 points to get 1635.0 axon voxels filled
-Trying to place 168306 points to get 901.0 axon voxels filled
-Trying to place 202831 points to get 1169.0 axon voxels filled
-Trying to place 509529 points to get 6154.0 axon voxels filled
-Trying to place 507192 points to get 9486.0 axon voxels filled
-Trying to place 488127 points to get 5648.0 axon voxels filled
-Trying to place 312118 points to get 2377.0 axon voxels filled
-Trying to place 66827 points to get 100.0 axon voxels filled
+Trying to place 188534 points to get 736.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 493643 points to get 9098.0 axon voxels filled
+Trying to place 543295 points to get 10627.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 7093 points to get 2.0 axon voxels filled
+Trying to place 233587 points to get 1041.0 axon voxels filled
+Trying to place 66586 points to get 79.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 121481 points to get 462.0 axon voxels filled
-Trying to place 532402 points to get 8957.0 axon voxels filled
-Trying to place 321378 points to get 2162.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 548422 points to get 8824.0 axon voxels filled
-Trying to place 242420 points to get 1446.0 axon voxels filled
-Trying to place 470792 points to get 5622.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 151044 points to get 1162.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 508265 points to get 6292.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 553547 points to get 7327.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 401640 points to get 5111.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 533275 points to get 7944.0 axon voxels filled
-Trying to place 339756 points to get 2647.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 4.411615626013372s, hyperID: 25
+Trying to place 59857 points to get 282.0 axon voxels filled
+placeSynapsesNoAxonSphere: 3.5776611089822836s, hyperID: 20
 Create lookup table
-detectSynapses: 6103 took 0.23564848798559979s
+detectSynapses: 1928 took 0.1534489950281568s
 Create lookup table
-detectGapJunctions: 0.20661778701469302s
-Wrote hyper voxel 25 (6103 synapses, 0 gap junctions)
-HyperID 25 completed - 6103 synapses and 0 gap junctions found (9.942827121994924s)
-Processing hyper voxel : 24/80 (56 neurons)
+detectGapJunctions: 0.13766573800239712s
+Wrote hyper voxel 20 (1928 synapses, 0 gap junctions)
+HyperID 20 completed - 1928 synapses and 0 gap junctions found (9.000816291023511s)
+Processing hyper voxel : 17/80 (50 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 504320 points to get 11062.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 540125 points to get 5244.0 axon voxels filled
-Trying to place 37044 points to get 132.0 axon voxels filled
-Too little of axon appears to be inside hyper voxel
-Trying to place 538440 points to get 6754.0 axon voxels filled
+Trying to place 96507 points to get 469.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 147142 points to get 538.0 axon voxels filled
+Trying to place 70149 points to get 174.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 342953 points to get 1036.0 axon voxels filled
-Trying to place 517249 points to get 4999.0 axon voxels filled
-Trying to place 531018 points to get 10342.0 axon voxels filled
-Trying to place 103404 points to get 617.0 axon voxels filled
-Trying to place 51388 points to get 186.0 axon voxels filled
-Trying to place 21864 points to get 50.0 axon voxels filled
-Trying to place 379372 points to get 3171.0 axon voxels filled
+Trying to place 972 points to get 1.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 43892 points to get 73.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 65898 points to get 117.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 41394 points to get 21.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 485944 points to get 7159.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 85465 points to get 336.0 axon voxels filled
-Trying to place 510738 points to get 5919.0 axon voxels filled
-Trying to place 104015 points to get 362.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 473018 points to get 5341.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 537981 points to get 2380.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 533173 points to get 7998.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 87661 points to get 856.0 axon voxels filled
-Trying to place 461414 points to get 1117.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 3.3987157469964586s, hyperID: 24
-Create lookup table
-detectSynapses: 1623 took 0.0711572470027022s
-Create lookup table
-detectGapJunctions: 0.07505941099952906s
-Wrote hyper voxel 24 (1623 synapses, 0 gap junctions)
-HyperID 24 completed - 1623 synapses and 0 gap junctions found (7.095057476020884s)
-Processing hyper voxel : 5/80 (51 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 4634 points to get 3.0 axon voxels filled
-Trying to place 177426 points to get 997.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 369432 points to get 2134.0 axon voxels filled
-Trying to place 6668 points to get 7.0 axon voxels filled
-Trying to place 536161 points to get 8430.0 axon voxels filled
-Trying to place 215222 points to get 982.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 505017 points to get 10618.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 544122 points to get 8142.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 160928 points to get 251.0 axon voxels filled
-Trying to place 2256 points to get 5.0 axon voxels filled
-Trying to place 68927 points to get 69.0 axon voxels filled
-Trying to place 1961 points to get 1.0 axon voxels filled
-Trying to place 115923 points to get 154.0 axon voxels filled
-Trying to place 53892 points to get 117.0 axon voxels filled
+Trying to place 4100 points to get 1.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -187,169 +180,59 @@ Too little of axon appears to be inside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 358152 points to get 1649.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 491597 points to get 3142.0 axon voxels filled
+Trying to place 1881 points to get 7.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 455307 points to get 5078.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 14743 points to get 18.0 axon voxels filled
 Bounding box appears to be outside hyper voxel
+Trying to place 535332 points to get 3653.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 65331 points to get 961.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 510968 points to get 3134.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 508315 points to get 11276.0 axon voxels filled
+Trying to place 26001 points to get 7.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 495204 points to get 5100.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.925090738979634s, hyperID: 5
-Create lookup table
-detectSynapses: 671 took 0.03682098799617961s
-Create lookup table
-detectGapJunctions: 0.04972408903995529s
-Wrote hyper voxel 5 (671 synapses, 0 gap junctions)
-HyperID 5 completed - 671 synapses and 0 gap junctions found (5.683908372011501s)
-Processing hyper voxel : 21/80 (49 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 493600 points to get 7992.0 axon voxels filled
+Trying to place 164836 points to get 766.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Too little of axon appears to be inside hyper voxel
-Trying to place 988 points to get 3.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Trying to place 3443 points to get 8.0 axon voxels filled
-Trying to place 104746 points to get 191.0 axon voxels filled
-Too little of axon appears to be inside hyper voxel
-Trying to place 450696 points to get 1020.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 486161 points to get 10364.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 36828 points to get 84.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 22419 points to get 153.0 axon voxels filled
-Too little of axon appears to be inside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 58891 points to get 121.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 9908 points to get 22.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Too little of axon appears to be inside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 139432 points to get 207.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.6022919429815374s, hyperID: 21
+placeSynapsesNoAxonSphere: 2.5338731960509904s, hyperID: 17
 Create lookup table
-detectSynapses: 371 took 0.03641254099784419s
+detectSynapses: 305 took 0.03907774802064523s
 Create lookup table
-detectGapJunctions: 0.05700329097453505s
-Wrote hyper voxel 21 (371 synapses, 0 gap junctions)
-HyperID 21 completed - 371 synapses and 0 gap junctions found (4.931858527997974s)
-Processing hyper voxel : 4/80 (43 neurons)
+detectGapJunctions: 0.05435724701965228s
+Wrote hyper voxel 17 (305 synapses, 0 gap junctions)
+HyperID 17 completed - 305 synapses and 0 gap junctions found (6.697803817980457s)
+Processing hyper voxel : 5/80 (44 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 264856 points to get 1116.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 68704 points to get 539.0 axon voxels filled
-Trying to place 388676 points to get 7740.0 axon voxels filled
-Trying to place 23536 points to get 188.0 axon voxels filled
+Trying to place 56082 points to get 494.0 axon voxels filled
+Trying to place 269652 points to get 2084.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 338775 points to get 2684.0 axon voxels filled
+Trying to place 384914 points to get 5990.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 504842 points to get 3406.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 525937 points to get 9865.0 axon voxels filled
-Trying to place 498100 points to get 5875.0 axon voxels filled
-Trying to place 59124 points to get 244.0 axon voxels filled
-Trying to place 37953 points to get 16.0 axon voxels filled
+Trying to place 158099 points to get 485.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 34605 points to get 67.0 axon voxels filled
+Trying to place 263483 points to get 652.0 axon voxels filled
+Trying to place 72643 points to get 351.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 39883 points to get 68.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 547981 points to get 4703.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.815018711029552s, hyperID: 4
-Create lookup table
-detectSynapses: 163 took 0.012315250001847744s
-Create lookup table
-detectGapJunctions: 0.016818939009681344s
-Wrote hyper voxel 4 (163 synapses, 0 gap junctions)
-HyperID 4 completed - 163 synapses and 0 gap junctions found (4.953158343036193s)
-Processing hyper voxel : 20/80 (43 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 18569 points to get 131.0 axon voxels filled
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 24511 points to get 278.0 axon voxels filled
-Too little of axon appears to be inside hyper voxel
-Trying to place 100331 points to get 588.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 100127 points to get 351.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 55919 points to get 130.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 53964 points to get 97.0 axon voxels filled
+Trying to place 95347 points to get 249.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Bounding box appears to be outside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
@@ -357,42 +240,38 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 25185 points to get 74.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 98087 points to get 60.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.42547407199163s, hyperID: 20
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 517394 points to get 3575.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 15363 points to get 13.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 1.6358880489715375s, hyperID: 5
 Create lookup table
-detectSynapses: 79 took 0.014094036014284939s
+detectSynapses: 481 took 0.024873901973478496s
 Create lookup table
-detectGapJunctions: 0.020144976035226136s
-Wrote hyper voxel 20 (79 synapses, 0 gap junctions)
-HyperID 20 completed - 79 synapses and 0 gap junctions found (3.4986014330061153s)
-Processing hyper voxel : 1/80 (39 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 89768 points to get 337.0 axon voxels filled
-Trying to place 7373 points to get 10.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 121612 points to get 523.0 axon voxels filled
-Trying to place 55256 points to get 152.0 axon voxels filled
-Trying to place 109098 points to get 374.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 333862 points to get 957.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 67868 points to get 210.0 axon voxels filled
-Trying to place 458670 points to get 2901.0 axon voxels filled
+detectGapJunctions: 0.03324026701739058s
+Wrote hyper voxel 5 (481 synapses, 0 gap junctions)
+HyperID 5 completed - 481 synapses and 0 gap junctions found (4.964620941027533s)
+Processing hyper voxel : 37/80 (44 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 467104 points to get 6938.0 axon voxels filled
+Trying to place 444979 points to get 5021.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -406,85 +285,154 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.2701591110089794s, hyperID: 1
-Create lookup table
-detectSynapses: 96 took 0.009407062956597656s
-Create lookup table
-detectGapJunctions: 0.015522578032687306s
-Wrote hyper voxel 1 (96 synapses, 0 gap junctions)
-HyperID 1 completed - 96 synapses and 0 gap junctions found (4.677905043994542s)
-Processing hyper voxel : 45/80 (39 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 535169 points to get 8569.0 axon voxels filled
+Trying to place 27220 points to get 22.0 axon voxels filled
+Trying to place 2226 points to get 1.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 29941 points to get 80.0 axon voxels filled
-Trying to place 536625 points to get 4611.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 508592 points to get 2728.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 515758 points to get 4236.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 2008 points to get 1.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 524808 points to get 4594.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 43574 points to get 136.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Too little of axon appears to be inside hyper voxel
-Trying to place 64804 points to get 150.0 axon voxels filled
+Trying to place 504574 points to get 4090.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.2816987069672905s, hyperID: 45
+Trying to place 66413 points to get 160.0 axon voxels filled
+Trying to place 3001 points to get 3.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 237 points to get 1.0 axon voxels filled
+Trying to place 314250 points to get 1153.0 axon voxels filled
+Trying to place 541734 points to get 6649.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 1.891147596994415s, hyperID: 37
 Create lookup table
-detectSynapses: 43 took 0.011932249995879829s
+detectSynapses: 114 took 0.017390786029864103s
 Create lookup table
-detectGapJunctions: 0.009793897974304855s
-Wrote hyper voxel 45 (43 synapses, 0 gap junctions)
-HyperID 45 completed - 43 synapses and 0 gap junctions found (3.9050001460127532s)
-Processing hyper voxel : 29/80 (39 neurons)
+detectGapJunctions: 0.026801115018315613s
+Wrote hyper voxel 37 (114 synapses, 0 gap junctions)
+HyperID 37 completed - 114 synapses and 0 gap junctions found (6.073642757022753s)
+Processing hyper voxel : 16/80 (44 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 32460 points to get 25.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 206542 points to get 882.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 30306 points to get 83.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 27001 points to get 47.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 547944 points to get 11118.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Bounding box appears to be outside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 497200 points to get 5297.0 axon voxels filled
+Trying to place 91199 points to get 302.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 522394 points to get 8918.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 139551 points to get 478.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 133888 points to get 509.0 axon voxels filled
+placeSynapsesNoAxonSphere: 1.9321985130081885s, hyperID: 16
+Create lookup table
+detectSynapses: 242 took 0.026952717977110296s
+Create lookup table
+detectGapJunctions: 0.03760353400139138s
+Wrote hyper voxel 16 (242 synapses, 0 gap junctions)
+HyperID 16 completed - 242 synapses and 0 gap junctions found (7.941265632980503s)
+Processing hyper voxel : 4/80 (40 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 554504 points to get 11177.0 axon voxels filled
+Trying to place 76131 points to get 270.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 526444 points to get 3635.0 axon voxels filled
+Trying to place 18635 points to get 14.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 122424 points to get 266.0 axon voxels filled
-Trying to place 51492 points to get 78.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 11105 points to get 45.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
 Too little of axon appears to be inside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 54971 points to get 176.0 axon voxels filled
+Trying to place 3674 points to get 4.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 32760 points to get 366.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 10098 points to get 24.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 442566 points to get 4265.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 1.516714998986572s, hyperID: 4
+Create lookup table
+detectSynapses: 208 took 0.017298019025474787s
+Create lookup table
+detectGapJunctions: 0.03209150396287441s
+Wrote hyper voxel 4 (208 synapses, 0 gap junctions)
+HyperID 4 completed - 208 synapses and 0 gap junctions found (5.014664368995s)
+Processing hyper voxel : 36/80 (39 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 154668 points to get 767.0 axon voxels filled
+Trying to place 41766 points to get 127.0 axon voxels filled
 Too little of axon appears to be inside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -493,63 +441,34 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 178141 points to get 1250.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.1652291429927573s, hyperID: 29
-Create lookup table
-detectSynapses: 107 took 0.01287272700574249s
-Create lookup table
-detectGapJunctions: 0.01882067002588883s
-Wrote hyper voxel 29 (107 synapses, 0 gap junctions)
-HyperID 29 completed - 107 synapses and 0 gap junctions found (4.078565060975961s)
-Processing hyper voxel : 28/80 (39 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 514065 points to get 6966.0 axon voxels filled
-Trying to place 485494 points to get 3195.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 77504 points to get 256.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
 Bounding box appears to be outside hyper voxel
-Trying to place 524827 points to get 6651.0 axon voxels filled
+Trying to place 14219 points to get 107.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 550306 points to get 5832.0 axon voxels filled
+Trying to place 442101 points to get 3416.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 107831 points to get 472.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 58600 points to get 439.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 527126 points to get 7020.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 319213 points to get 1010.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 531424 points to get 8183.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.8627824049908668s, hyperID: 28
+Trying to place 537439 points to get 9642.0 axon voxels filled
+placeSynapsesNoAxonSphere: 1.2781956160324626s, hyperID: 36
 Create lookup table
-detectSynapses: 393 took 0.021122439007740468s
+detectSynapses: 35 took 0.0074891429976560175s
 Create lookup table
-detectGapJunctions: 0.015859910054132342s
-Wrote hyper voxel 28 (393 synapses, 0 gap junctions)
-HyperID 28 completed - 393 synapses and 0 gap junctions found (4.5275247630197555s)
-Processing hyper voxel : 44/80 (33 neurons)
-Trying to place 32977 points to get 11.0 axon voxels filled
+detectGapJunctions: 0.0073998679872602224s
+Wrote hyper voxel 36 (35 synapses, 0 gap junctions)
+HyperID 36 completed - 35 synapses and 0 gap junctions found (4.2724143150262535s)
+Processing hyper voxel : 25/80 (38 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 352470 points to get 898.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 9696 points to get 31.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 531296 points to get 8448.0 axon voxels filled
+Trying to place 541642 points to get 3369.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -561,14 +480,9 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 552381 points to get 5316.0 axon voxels filled
-Trying to place 5076 points to get 7.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 502222 points to get 6002.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 438184 points to get 1250.0 axon voxels filled
+Trying to place 521728 points to get 10257.0 axon voxels filled
+Trying to place 15091 points to get 103.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -576,136 +490,26 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 544811 points to get 10344.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 5638 points to get 2.0 axon voxels filled
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.9648337449762039s, hyperID: 44
+placeSynapsesNoAxonSphere: 1.7850598329678178s, hyperID: 25
 Create lookup table
-detectSynapses: 7 took 0.005453979014419019s
+detectSynapses: 58 took 0.0081117789959535s
 Create lookup table
-detectGapJunctions: 0.003729556978214532s
-Wrote hyper voxel 44 (7 synapses, 0 gap junctions)
-HyperID 44 completed - 7 synapses and 0 gap junctions found (3.1306709009804763s)
-Processing hyper voxel : 26/80 (33 neurons)
+detectGapJunctions: 0.007315221009775996s
+Wrote hyper voxel 25 (58 synapses, 0 gap junctions)
+HyperID 25 completed - 58 synapses and 0 gap junctions found (3.457871216989588s)
+Processing hyper voxel : 1/80 (37 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 202359 points to get 597.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 42950 points to get 82.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Trying to place 544168 points to get 7794.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 537050 points to get 11312.0 axon voxels filled
-Trying to place 507191 points to get 3728.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 57485 points to get 216.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 41171 points to get 67.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.9884601919911802s, hyperID: 26
-Create lookup table
-detectSynapses: 97 took 0.015923104947432876s
-Create lookup table
-detectGapJunctions: 0.014778793964069337s
-Wrote hyper voxel 26 (97 synapses, 0 gap junctions)
-HyperID 26 completed - 97 synapses and 0 gap junctions found (4.550255758978892s)
-Processing hyper voxel : 0/80 (31 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 158164 points to get 389.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 34385 points to get 68.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 507342 points to get 6536.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.2813307440374047s, hyperID: 0
-Create lookup table
-detectSynapses: 44 took 0.011048240994568914s
-Create lookup table
-detectGapJunctions: 0.013676539005246013s
-Wrote hyper voxel 0 (44 synapses, 0 gap junctions)
-HyperID 0 completed - 44 synapses and 0 gap junctions found (3.574888226983603s)
-Processing hyper voxel : 41/80 (29 neurons)
-Trying to place 497689 points to get 4876.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 410186 points to get 4964.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 154373 points to get 326.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Too little of axon appears to be inside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 13004 points to get 44.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 43779 points to get 34.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 1.2396968280081637s, hyperID: 41
-Create lookup table
-detectSynapses: 25 took 0.015480091038625687s
-Create lookup table
-detectGapJunctions: 0.013652275025378913s
-Wrote hyper voxel 41 (25 synapses, 0 gap junctions)
-HyperID 41 completed - 25 synapses and 0 gap junctions found (2.656229362997692s)
-Processing hyper voxel : 8/80 (28 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 480199 points to get 4038.0 axon voxels filled
+Trying to place 49479 points to get 124.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Too little of axon appears to be inside hyper voxel
@@ -713,31 +517,47 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Bounding box appears to be outside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 547035 points to get 11897.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 57106 points to get 19.0 axon voxels filled
+Trying to place 458524 points to get 3742.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 477224 points to get 1985.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 301053 points to get 1007.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.9229271310032345s, hyperID: 8
+placeSynapsesNoAxonSphere: 1.3781606020056643s, hyperID: 1
 Create lookup table
-detectSynapses: 0 took 0.007794609002303332s
+detectSynapses: 196 took 0.013959588017314672s
 Create lookup table
-detectGapJunctions: 0.0044618709944188595s
-Wrote hyper voxel 8 (0 synapses, 0 gap junctions)
-HyperID 8 completed - 0 synapses and 0 gap junctions found (2.7740196809754707s)
-Processing hyper voxel : 9/80 (27 neurons)
+detectGapJunctions: 0.01857851102249697s
+Wrote hyper voxel 1 (196 synapses, 0 gap junctions)
+HyperID 1 completed - 196 synapses and 0 gap junctions found (4.678928321984131s)
+Processing hyper voxel : 24/80 (36 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 476583 points to get 5070.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 435760 points to get 4367.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 58652 points to get 199.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 510167 points to get 8644.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -747,6 +567,7 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 27030 points to get 40.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -756,37 +577,62 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 27236 points to get 66.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 317433 points to get 756.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.6298142480081879s, hyperID: 9
+Trying to place 99020 points to get 472.0 axon voxels filled
+placeSynapsesNoAxonSphere: 1.952856947958935s, hyperID: 24
 Create lookup table
-detectSynapses: 1 took 0.005260951991658658s
+detectSynapses: 105 took 0.01663600403117016s
 Create lookup table
-detectGapJunctions: 0.0062412930419668555s
-Wrote hyper voxel 9 (1 synapses, 0 gap junctions)
-HyperID 9 completed - 1 synapses and 0 gap junctions found (3.1800843229866587s)
-Processing hyper voxel : 49/80 (25 neurons)
+detectGapJunctions: 0.015491876984015107s
+Wrote hyper voxel 24 (105 synapses, 0 gap junctions)
+HyperID 24 completed - 105 synapses and 0 gap junctions found (3.611241933016572s)
+Processing hyper voxel : 0/80 (32 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 318197 points to get 1525.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 232619 points to get 429.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 464562 points to get 5229.0 axon voxels filled
+Trying to place 513992 points to get 2895.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 12536 points to get 16.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 552149 points to get 5062.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 1.120122708962299s, hyperID: 0
+Create lookup table
+detectSynapses: 136 took 0.01101916201878339s
+Create lookup table
+detectGapJunctions: 0.008446238993201405s
+Wrote hyper voxel 0 (136 synapses, 0 gap junctions)
+HyperID 0 completed - 136 synapses and 0 gap junctions found (4.555332296004053s)
+Processing hyper voxel : 9/80 (32 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 422723 points to get 855.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 539478 points to get 6893.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -795,75 +641,78 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Bounding box appears to be outside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.760559796995949s, hyperID: 49
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 9835 points to get 45.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 1.04546582599869s, hyperID: 9
 Create lookup table
-detectSynapses: 2 took 0.005330004030838609s
+detectSynapses: 20 took 0.006263416027650237s
 Create lookup table
-detectGapJunctions: 0.0029387029935605824s
-Wrote hyper voxel 49 (2 synapses, 0 gap junctions)
-HyperID 49 completed - 2 synapses and 0 gap junctions found (2.801321312028449s)
-Processing hyper voxel : 22/80 (24 neurons)
+detectGapJunctions: 0.0058225730317644775s
+Wrote hyper voxel 9 (20 synapses, 0 gap junctions)
+HyperID 9 completed - 20 synapses and 0 gap junctions found (2.2859076429740526s)
+Processing hyper voxel : 22/80 (29 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 2037 points to get 1.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 6806 points to get 4.0 axon voxels filled
+Trying to place 31647 points to get 18.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 35329 points to get 15.0 axon voxels filled
+Trying to place 464422 points to get 3106.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Too little of axon appears to be inside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 377103 points to get 1296.0 axon voxels filled
-Trying to place 17483 points to get 116.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.605951085977722s, hyperID: 22
-Create lookup table
-detectSynapses: 4 took 0.0047807900118641555s
-Create lookup table
-detectGapJunctions: 0.002384276012890041s
-Wrote hyper voxel 22 (4 synapses, 0 gap junctions)
-HyperID 22 completed - 4 synapses and 0 gap junctions found (2.6476814769557677s)
-Processing hyper voxel : 6/80 (23 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Too little of axon appears to be inside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
 Bounding box appears to be outside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.5011632230016403s, hyperID: 6
+placeSynapsesNoAxonSphere: 1.2004484990029596s, hyperID: 22
 Create lookup table
-detectSynapses: 1 took 0.004962884995620698s
+detectSynapses: 7 took 0.005407137970905751s
 Create lookup table
-detectGapJunctions: 0.002732039021793753s
-Wrote hyper voxel 6 (1 synapses, 0 gap junctions)
-HyperID 6 completed - 1 synapses and 0 gap junctions found (2.5414408579817973s)
-Processing hyper voxel : 30/80 (22 neurons)
+detectGapJunctions: 0.0030555640114471316s
+Wrote hyper voxel 22 (7 synapses, 0 gap junctions)
+HyperID 22 completed - 7 synapses and 0 gap junctions found (3.7536892860080115s)
+Processing hyper voxel : 33/80 (29 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -879,28 +728,63 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Too little of axon appears to be inside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 537547 points to get 11098.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.4541348190396093s, hyperID: 30
+placeSynapsesNoAxonSphere: 0.889533974986989s, hyperID: 33
 Create lookup table
-detectSynapses: 0 took 0.004642373998649418s
+detectSynapses: 7 took 0.0065399049781262875s
 Create lookup table
-detectGapJunctions: 0.002452096960041672s
-Wrote hyper voxel 30 (0 synapses, 0 gap junctions)
-HyperID 30 completed - 0 synapses and 0 gap junctions found (2.6906901989714243s)
-Processing hyper voxel : 46/80 (21 neurons)
+detectGapJunctions: 0.0071670489851385355s
+Wrote hyper voxel 33 (7 synapses, 0 gap junctions)
+HyperID 33 completed - 7 synapses and 0 gap junctions found (3.8279087789705954s)
+Processing hyper voxel : 32/80 (28 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 56532 points to get 139.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 16643 points to get 66.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 154745 points to get 155.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 146339 points to get 222.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.7111220950027928s, hyperID: 32
+Create lookup table
+detectSynapses: 32 took 0.011553028016351163s
+Create lookup table
+detectGapJunctions: 0.008858610992319882s
+Wrote hyper voxel 32 (32 synapses, 0 gap junctions)
+HyperID 32 completed - 32 synapses and 0 gap junctions found (3.4292672350420617s)
+Processing hyper voxel : 8/80 (27 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 349055 points to get 592.0 axon voxels filled
+Trying to place 501689 points to get 4199.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Bounding box appears to be outside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 506413 points to get 5582.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 411399 points to get 2417.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -910,16 +794,25 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 2360 points to get 5.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.6171631370089017s, hyperID: 46
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 1.1767529889475554s, hyperID: 8
 Create lookup table
-detectSynapses: 1 took 0.005285228020511568s
+detectSynapses: 49 took 0.008280810958240181s
 Create lookup table
-detectGapJunctions: 0.0025432550464756787s
-Wrote hyper voxel 46 (1 synapses, 0 gap junctions)
-HyperID 46 completed - 1 synapses and 0 gap junctions found (2.487041324027814s)
-Processing hyper voxel : 40/80 (21 neurons)
+detectGapJunctions: 0.005194134952034801s
+Wrote hyper voxel 8 (49 synapses, 0 gap junctions)
+HyperID 8 completed - 49 synapses and 0 gap junctions found (2.255113825958688s)
+Processing hyper voxel : 40/80 (27 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 429447 points to get 3878.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 215537 points to get 737.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -930,26 +823,29 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 534673 points to get 7734.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Bounding box appears to be outside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 62312 points to get 192.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.5874284180463292s, hyperID: 40
+Trying to place 508821 points to get 4758.0 axon voxels filled
+Trying to place 409300 points to get 5194.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.9549084670143202s, hyperID: 40
 Create lookup table
-detectSynapses: 2 took 0.008424482017289847s
+detectSynapses: 0 took 0.012585397984366864s
 Create lookup table
-detectGapJunctions: 0.005535996984690428s
-Wrote hyper voxel 40 (2 synapses, 0 gap junctions)
-HyperID 40 completed - 2 synapses and 0 gap junctions found (1.324133926013019s)
-Processing hyper voxel : 48/80 (19 neurons)
-Trying to place 492394 points to get 5367.0 axon voxels filled
+detectGapJunctions: 0.006304536014795303s
+Wrote hyper voxel 40 (0 synapses, 0 gap junctions)
+HyperID 40 completed - 0 synapses and 0 gap junctions found (2.261146396980621s)
+Processing hyper voxel : 41/80 (26 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 2685 points to get 1.0 axon voxels filled
+Trying to place 496830 points to get 4817.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -957,7 +853,6 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 51510 points to get 461.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -966,59 +861,186 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 511927 points to get 7440.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.5772071399842389s, hyperID: 48
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 504004 points to get 6383.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 1.0020751589909196s, hyperID: 41
 Create lookup table
-detectSynapses: 0 took 0.004660628968849778s
+detectSynapses: 0 took 0.005712810030672699s
 Create lookup table
-detectGapJunctions: 0.0024296040064655244s
-Wrote hyper voxel 48 (0 synapses, 0 gap junctions)
-HyperID 48 completed - 0 synapses and 0 gap junctions found (2.46311541297473s)
-Processing hyper voxel : 2/80 (16 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 11315 points to get 9.0 axon voxels filled
+detectGapJunctions: 0.0027583109913393855s
+Wrote hyper voxel 41 (0 synapses, 0 gap junctions)
+HyperID 41 completed - 0 synapses and 0 gap junctions found (2.313690795970615s)
+Processing hyper voxel : 18/80 (23 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 281914 points to get 336.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.38454144599381834s, hyperID: 2
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 531481 points to get 3125.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 414953 points to get 1791.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 5320 points to get 23.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.7700631860061549s, hyperID: 18
 Create lookup table
-detectSynapses: 0 took 0.005056183028500527s
+detectSynapses: 0 took 0.0055182629730552435s
 Create lookup table
-detectGapJunctions: 0.0024689760175533593s
+detectGapJunctions: 0.0025872960104607046s
+Wrote hyper voxel 18 (0 synapses, 0 gap junctions)
+HyperID 18 completed - 0 synapses and 0 gap junctions found (3.031317740038503s)
+Processing hyper voxel : 6/80 (22 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Too little of axon appears to be inside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 25764 points to get 22.0 axon voxels filled
+Too little of axon appears to be inside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.47405923798214644s, hyperID: 6
+Create lookup table
+detectSynapses: 0 took 0.005507672962266952s
+Create lookup table
+detectGapJunctions: 0.00293142901500687s
+Wrote hyper voxel 6 (0 synapses, 0 gap junctions)
+HyperID 6 completed - 0 synapses and 0 gap junctions found (2.7551720929914154s)
+Processing hyper voxel : 38/80 (17 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 321135 points to get 1191.0 axon voxels filled
+Trying to place 34974 points to get 66.0 axon voxels filled
+Trying to place 268629 points to get 873.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.48038347001420334s, hyperID: 38
+Create lookup table
+detectSynapses: 0 took 0.0054143600282259285s
+Create lookup table
+detectGapJunctions: 0.0026723890332505107s
+Wrote hyper voxel 38 (0 synapses, 0 gap junctions)
+HyperID 38 completed - 0 synapses and 0 gap junctions found (2.465935576008633s)
+Processing hyper voxel : 26/80 (16 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Bounding box appears to be outside hyper voxel
+Too little of axon appears to be inside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Bounding box appears to be outside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.34968629298964515s, hyperID: 26
+Create lookup table
+detectSynapses: 4 took 0.005461274995468557s
+Create lookup table
+detectGapJunctions: 0.003181389009114355s
+Wrote hyper voxel 26 (4 synapses, 0 gap junctions)
+HyperID 26 completed - 4 synapses and 0 gap junctions found (0.9581576019991189s)
+Processing hyper voxel : 2/80 (15 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Too little of axon appears to be inside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 463861 points to get 5907.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.45832246297504753s, hyperID: 2
+Create lookup table
+detectSynapses: 0 took 0.005402286013122648s
+Create lookup table
+detectGapJunctions: 0.0026246339548379183s
 Wrote hyper voxel 2 (0 synapses, 0 gap junctions)
-HyperID 2 completed - 0 synapses and 0 gap junctions found (2.215453315002378s)
-Processing hyper voxel : 42/80 (14 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Bounding box appears to be outside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Trying to place 152847 points to get 347.0 axon voxels filled
+HyperID 2 completed - 0 synapses and 0 gap junctions found (1.0489145769970492s)
+Processing hyper voxel : 34/80 (11 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 234991 points to get 218.0 axon voxels filled
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.3161061759456061s, hyperID: 42
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.3371149000013247s, hyperID: 34
 Create lookup table
-detectSynapses: 0 took 0.004833351995330304s
+detectSynapses: 0 took 0.005366466997656971s
 Create lookup table
-detectGapJunctions: 0.0024685970274731517s
+detectGapJunctions: 0.0025937219616025686s
+Wrote hyper voxel 34 (0 synapses, 0 gap junctions)
+HyperID 34 completed - 0 synapses and 0 gap junctions found (0.8118685950175859s)
+Processing hyper voxel : 42/80 (10 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Too little of axon appears to be inside hyper voxel
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 6743 points to get 31.0 axon voxels filled
+Placing 40727 random axon points for ChIN_0(cached)
+Placing 40727 random axon points for ChIN_0(cached)
+Trying to place 87542 points to get 29.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.18583866499830037s, hyperID: 42
+Create lookup table
+detectSynapses: 0 took 0.00932020298205316s
+Create lookup table
+detectGapJunctions: 0.00546006701188162s
 Wrote hyper voxel 42 (0 synapses, 0 gap junctions)
-HyperID 42 completed - 0 synapses and 0 gap junctions found (1.9954818369587883s)
-Processing hyper voxel : 10/80 (11 neurons)
+HyperID 42 completed - 0 synapses and 0 gap junctions found (0.5576423549791798s)
+Processing hyper voxel : 10/80 (8 neurons)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
@@ -1027,222 +1049,193 @@ Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.24592666001990438s, hyperID: 10
+placeSynapsesNoAxonSphere: 0.2069277680129744s, hyperID: 10
 Create lookup table
-detectSynapses: 0 took 0.004834214982111007s
+detectSynapses: 0 took 0.005401999980676919s
 Create lookup table
-detectGapJunctions: 0.0024361350224353373s
+detectGapJunctions: 0.0025437260046601295s
 Wrote hyper voxel 10 (0 synapses, 0 gap junctions)
-HyperID 10 completed - 0 synapses and 0 gap junctions found (1.9780675569782034s)
-Processing hyper voxel : 50/80 (10 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
+HyperID 10 completed - 0 synapses and 0 gap junctions found (0.6179018029943109s)
+Processing hyper voxel : 53/80 (5 neurons)
+Trying to place 532870 points to get 4894.0 axon voxels filled
 Too little of axon appears to be inside hyper voxel
 Placing 40727 random axon points for ChIN_0(cached)
 Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.19253397395368665s, hyperID: 50
+placeSynapsesNoAxonSphere: 0.18127938598627225s, hyperID: 53
 Create lookup table
-detectSynapses: 0 took 0.00526042195269838s
+detectSynapses: 0 took 0.006210546009242535s
 Create lookup table
-detectGapJunctions: 0.002284119022078812s
-Wrote hyper voxel 50 (0 synapses, 0 gap junctions)
-HyperID 50 completed - 0 synapses and 0 gap junctions found (0.5633694400312379s)
-Processing hyper voxel : 32/80 (5 neurons)
-Trying to place 341343 points to get 659.0 axon voxels filled
-Trying to place 461023 points to get 2117.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-Too little of axon appears to be inside hyper voxel
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.18517595203593373s, hyperID: 32
-Create lookup table
-detectSynapses: 0 took 0.005483832967001945s
-Create lookup table
-detectGapJunctions: 0.0026534440112300217s
-Wrote hyper voxel 32 (0 synapses, 0 gap junctions)
-HyperID 32 completed - 0 synapses and 0 gap junctions found (0.32518639595946297s)
-Processing hyper voxel : 52/80 (3 neurons)
-Too little of axon appears to be inside hyper voxel
-Trying to place 540957 points to get 2409.0 axon voxels filled
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.11008905299240723s, hyperID: 52
-Create lookup table
-detectSynapses: 0 took 0.009285335021559149s
-Create lookup table
-detectGapJunctions: 0.005521651997696608s
-Wrote hyper voxel 52 (0 synapses, 0 gap junctions)
-HyperID 52 completed - 0 synapses and 0 gap junctions found (0.22603975603124127s)
-Processing hyper voxel : 33/80 (3 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.042278776003513485s, hyperID: 33
-Create lookup table
-detectSynapses: 0 took 0.004718915035482496s
-Create lookup table
-detectGapJunctions: 0.002238567976746708s
-Wrote hyper voxel 33 (0 synapses, 0 gap junctions)
-HyperID 33 completed - 0 synapses and 0 gap junctions found (0.43539949803380296s)
-Processing hyper voxel : 69/80 (2 neurons)
-Trying to place 521751 points to get 4207.0 axon voxels filled
-Trying to place 479335 points to get 1690.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.17089269700227305s, hyperID: 69
-Create lookup table
-detectSynapses: 0 took 0.0099376339931041s
-Create lookup table
-detectGapJunctions: 0.006197346956469119s
-Wrote hyper voxel 69 (0 synapses, 0 gap junctions)
-HyperID 69 completed - 0 synapses and 0 gap junctions found (0.2466652329894714s)
-Processing hyper voxel : 61/80 (2 neurons)
-Trying to place 551869 points to get 3672.0 axon voxels filled
-Trying to place 523106 points to get 3522.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.19427186797838658s, hyperID: 61
-Create lookup table
-detectSynapses: 0 took 0.011411873972974718s
-Create lookup table
-detectGapJunctions: 0.006052413024008274s
-Wrote hyper voxel 61 (0 synapses, 0 gap junctions)
-HyperID 61 completed - 0 synapses and 0 gap junctions found (0.28380557196214795s)
-Processing hyper voxel : 53/80 (2 neurons)
-Placing 40727 random axon points for ChIN_0(cached)
-Placing 40727 random axon points for ChIN_0(cached)
-placeSynapsesNoAxonSphere: 0.049384429992642254s, hyperID: 53
-Create lookup table
-detectSynapses: 0 took 0.005331558000762016s
-Create lookup table
-detectGapJunctions: 0.00261291500646621s
+detectGapJunctions: 0.0031272719497792423s
 Wrote hyper voxel 53 (0 synapses, 0 gap junctions)
-HyperID 53 completed - 0 synapses and 0 gap junctions found (0.20046823099255562s)
-Processing hyper voxel : 43/80 (2 neurons)
-Trying to place 521602 points to get 4662.0 axon voxels filled
-Trying to place 513316 points to get 4736.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.20137969101779163s, hyperID: 43
+HyperID 53 completed - 0 synapses and 0 gap junctions found (1.8091573520214297s)
+Processing hyper voxel : 29/80 (3 neurons)
+Trying to place 273860 points to get 1055.0 axon voxels filled
+Trying to place 431466 points to get 4104.0 axon voxels filled
+Trying to place 281341 points to get 255.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.2491006599739194s, hyperID: 29
 Create lookup table
-detectSynapses: 0 took 0.011206185969058424s
+detectSynapses: 0 took 0.016791393980383873s
 Create lookup table
-detectGapJunctions: 0.005870559019967914s
-Wrote hyper voxel 43 (0 synapses, 0 gap junctions)
-HyperID 43 completed - 0 synapses and 0 gap junctions found (0.28083346504718065s)
-Processing hyper voxel : 16/80 (1 neurons)
-Trying to place 9358 points to get 10.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.001101634989026934s, hyperID: 16
+detectGapJunctions: 0.010207690007518977s
+Wrote hyper voxel 29 (0 synapses, 0 gap junctions)
+HyperID 29 completed - 0 synapses and 0 gap junctions found (0.3604499549837783s)
+Processing hyper voxel : 61/80 (2 neurons)
+Trying to place 520484 points to get 5057.0 axon voxels filled
+Too little of axon appears to be inside hyper voxel
+placeSynapsesNoAxonSphere: 0.1533002330106683s, hyperID: 61
 Create lookup table
-detectSynapses: 0 took 0.005580067983828485s
+detectSynapses: 0 took 0.008802505035419017s
 Create lookup table
-detectGapJunctions: 0.003024639969225973s
-Wrote hyper voxel 16 (0 synapses, 0 gap junctions)
-HyperID 16 completed - 0 synapses and 0 gap junctions found (0.06837536295643076s)
-Processing hyper voxel : 12/80 (1 neurons)
-Trying to place 546063 points to get 5256.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.12835532502504066s, hyperID: 12
+detectGapJunctions: 0.003775062970817089s
+Wrote hyper voxel 61 (0 synapses, 0 gap junctions)
+HyperID 61 completed - 0 synapses and 0 gap junctions found (0.2725685759796761s)
+Processing hyper voxel : 58/80 (2 neurons)
+Trying to place 443148 points to get 1995.0 axon voxels filled
+Too little of axon appears to be inside hyper voxel
+placeSynapsesNoAxonSphere: 0.07649555098032579s, hyperID: 58
 Create lookup table
-detectSynapses: 0 took 0.009585721010807902s
+detectSynapses: 0 took 0.009622028970625252s
 Create lookup table
-detectGapJunctions: 0.0056845429935492575s
+detectGapJunctions: 0.004720096010714769s
+Wrote hyper voxel 58 (0 synapses, 0 gap junctions)
+HyperID 58 completed - 0 synapses and 0 gap junctions found (0.16367940499912947s)
+Processing hyper voxel : 57/80 (2 neurons)
+Trying to place 391328 points to get 1235.0 axon voxels filled
+Trying to place 205645 points to get 150.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.08388000301783904s, hyperID: 57
+Create lookup table
+detectSynapses: 0 took 0.010939375031739473s
+Create lookup table
+detectGapJunctions: 0.006291261001024395s
+Wrote hyper voxel 57 (0 synapses, 0 gap junctions)
+HyperID 57 completed - 0 synapses and 0 gap junctions found (0.1783370670164004s)
+Processing hyper voxel : 13/80 (2 neurons)
+Trying to place 516181 points to get 5495.0 axon voxels filled
+Trying to place 553252 points to get 6002.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.2924638309632428s, hyperID: 13
+Create lookup table
+detectSynapses: 0 took 0.00841275800485164s
+Create lookup table
+detectGapJunctions: 0.0031831570086069405s
+Wrote hyper voxel 13 (0 synapses, 0 gap junctions)
+HyperID 13 completed - 0 synapses and 0 gap junctions found (0.3895045170211233s)
+Processing hyper voxel : 54/80 (2 neurons)
+Trying to place 554700 points to get 2720.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.08368704601889476s, hyperID: 54
+Create lookup table
+detectSynapses: 0 took 0.01023402699502185s
+Create lookup table
+detectGapJunctions: 0.005554823961574584s
+Wrote hyper voxel 54 (0 synapses, 0 gap junctions)
+HyperID 54 completed - 0 synapses and 0 gap junctions found (1.5467065820121206s)
+Processing hyper voxel : 45/80 (2 neurons)
+Trying to place 539798 points to get 5231.0 axon voxels filled
+Trying to place 330582 points to get 816.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.15685282403137535s, hyperID: 45
+Create lookup table
+detectSynapses: 0 took 0.009644465986639261s
+Create lookup table
+detectGapJunctions: 0.00564008200308308s
+Wrote hyper voxel 45 (0 synapses, 0 gap junctions)
+HyperID 45 completed - 0 synapses and 0 gap junctions found (0.23768331902101636s)
+Processing hyper voxel : 12/80 (2 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+Too little of axon appears to be inside hyper voxel
+placeSynapsesNoAxonSphere: 0.026603403966873884s, hyperID: 12
+Create lookup table
+detectSynapses: 0 took 0.005194256955292076s
+Create lookup table
+detectGapJunctions: 0.002655190008226782s
 Wrote hyper voxel 12 (0 synapses, 0 gap junctions)
-HyperID 12 completed - 0 synapses and 0 gap junctions found (0.2003874329966493s)
-Processing hyper voxel : 51/80 (1 neurons)
-Trying to place 24379 points to get 18.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.0019412240362726152s, hyperID: 51
+HyperID 12 completed - 0 synapses and 0 gap junctions found (0.15266429499024525s)
+Processing hyper voxel : 49/80 (2 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.024149767006747425s, hyperID: 49
 Create lookup table
-detectSynapses: 0 took 0.005326226993929595s
+detectSynapses: 0 took 0.005777916987426579s
 Create lookup table
-detectGapJunctions: 0.002760589006356895s
-Wrote hyper voxel 51 (0 synapses, 0 gap junctions)
-HyperID 51 completed - 0 synapses and 0 gap junctions found (0.06647847796557471s)
-Processing hyper voxel : 47/80 (1 neurons)
-Trying to place 399979 points to get 1175.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.04677988600451499s, hyperID: 47
+detectGapJunctions: 0.0027880400302819908s
+Wrote hyper voxel 49 (0 synapses, 0 gap junctions)
+HyperID 49 completed - 0 synapses and 0 gap junctions found (1.4984206549706869s)
+Processing hyper voxel : 56/80 (1 neurons)
+Trying to place 536190 points to get 4017.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.1037834279704839s, hyperID: 56
 Create lookup table
-detectSynapses: 0 took 0.009371521009597927s
+detectSynapses: 0 took 0.010308607015758753s
 Create lookup table
-detectGapJunctions: 0.005253174982499331s
-Wrote hyper voxel 47 (0 synapses, 0 gap junctions)
-HyperID 47 completed - 0 synapses and 0 gap junctions found (0.11751271499088034s)
-Processing hyper voxel : 27/80 (1 neurons)
-Trying to place 514122 points to get 5043.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.11965812399284914s, hyperID: 27
+detectGapJunctions: 0.005660936003550887s
+Wrote hyper voxel 56 (0 synapses, 0 gap junctions)
+HyperID 56 completed - 0 synapses and 0 gap junctions found (0.17457216297043487s)
+Processing hyper voxel : 48/80 (1 neurons)
+Placing 40727 random axon points for ChIN_0(cached)
+placeSynapsesNoAxonSphere: 0.025048496027011424s, hyperID: 48
 Create lookup table
-detectSynapses: 0 took 0.010205435974057764s
+detectSynapses: 0 took 0.005161812994629145s
 Create lookup table
-detectGapJunctions: 0.005638197995722294s
-Wrote hyper voxel 27 (0 synapses, 0 gap junctions)
-HyperID 27 completed - 0 synapses and 0 gap junctions found (0.2006773060420528s)
-Processing hyper voxel : 31/80 (1 neurons)
-Trying to place 36327 points to get 26.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.0032095700153149664s, hyperID: 31
+detectGapJunctions: 0.0026853090384975076s
+Wrote hyper voxel 48 (0 synapses, 0 gap junctions)
+HyperID 48 completed - 0 synapses and 0 gap junctions found (0.12394473201129586s)
+Processing hyper voxel : 46/80 (1 neurons)
+Trying to place 279253 points to get 921.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.040900500025600195s, hyperID: 46
 Create lookup table
-detectSynapses: 0 took 0.009267418994568288s
+detectSynapses: 0 took 0.009834355034399778s
 Create lookup table
-detectGapJunctions: 0.0055617240141145885s
-Wrote hyper voxel 31 (0 synapses, 0 gap junctions)
-HyperID 31 completed - 0 synapses and 0 gap junctions found (0.07860828097909689s)
-Processing hyper voxel : 66/80 (1 neurons)
-Trying to place 517071 points to get 2918.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.08529221499338746s, hyperID: 66
+detectGapJunctions: 0.005624233977869153s
+Wrote hyper voxel 46 (0 synapses, 0 gap junctions)
+HyperID 46 completed - 0 synapses and 0 gap junctions found (0.11040995799703524s)
+Processing hyper voxel : 44/80 (1 neurons)
+Trying to place 547832 points to get 4548.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.11374485999112949s, hyperID: 44
 Create lookup table
-detectSynapses: 0 took 0.011604686034843326s
+detectSynapses: 0 took 0.010200680990237743s
 Create lookup table
-detectGapJunctions: 0.006014206039253622s
-Wrote hyper voxel 66 (0 synapses, 0 gap junctions)
-HyperID 66 completed - 0 synapses and 0 gap junctions found (0.17132338602095842s)
-Processing hyper voxel : 67/80 (1 neurons)
-Trying to place 185265 points to get 563.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.022319157025776803s, hyperID: 67
+detectGapJunctions: 0.00564971100538969s
+Wrote hyper voxel 44 (0 synapses, 0 gap junctions)
+HyperID 44 completed - 0 synapses and 0 gap junctions found (0.1940163050312549s)
+Processing hyper voxel : 19/80 (1 neurons)
+Trying to place 10638 points to get 12.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.0010101500083692372s, hyperID: 19
 Create lookup table
-detectSynapses: 0 took 0.010059295978862792s
+detectSynapses: 0 took 0.005173508019652218s
 Create lookup table
-detectGapJunctions: 0.005931430030614138s
-Wrote hyper voxel 67 (0 synapses, 0 gap junctions)
-HyperID 67 completed - 0 synapses and 0 gap junctions found (0.10227830603253096s)
-Processing hyper voxel : 73/80 (1 neurons)
-Trying to place 140815 points to get 132.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.01595109497429803s, hyperID: 73
+detectGapJunctions: 0.002917032048571855s
+Wrote hyper voxel 19 (0 synapses, 0 gap junctions)
+HyperID 19 completed - 0 synapses and 0 gap junctions found (0.06400025094626471s)
+Processing hyper voxel : 28/80 (1 neurons)
+Trying to place 500524 points to get 5401.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.122020909038838s, hyperID: 28
 Create lookup table
-detectSynapses: 0 took 0.010427539004012942s
+detectSynapses: 0 took 0.009872294962406158s
 Create lookup table
-detectGapJunctions: 0.006034179008565843s
-Wrote hyper voxel 73 (0 synapses, 0 gap junctions)
-HyperID 73 completed - 0 synapses and 0 gap junctions found (0.10157188301673159s)
-Processing hyper voxel : 70/80 (1 neurons)
-Trying to place 236272 points to get 281.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.02784585702465847s, hyperID: 70
+detectGapJunctions: 0.006472618959378451s
+Wrote hyper voxel 28 (0 synapses, 0 gap junctions)
+HyperID 28 completed - 0 synapses and 0 gap junctions found (0.19493287801742554s)
+Processing hyper voxel : 39/80 (1 neurons)
+Trying to place 447235 points to get 4217.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.09472697001183406s, hyperID: 39
 Create lookup table
-detectSynapses: 0 took 0.010421461018268019s
+detectSynapses: 0 took 0.011327448999509215s
 Create lookup table
-detectGapJunctions: 0.006797457986976951s
-Wrote hyper voxel 70 (0 synapses, 0 gap junctions)
-HyperID 70 completed - 0 synapses and 0 gap junctions found (0.11783026601187885s)
-Processing hyper voxel : 72/80 (1 neurons)
-Trying to place 445978 points to get 2945.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.08153303799917921s, hyperID: 72
+detectGapJunctions: 0.006182682991493493s
+Wrote hyper voxel 39 (0 synapses, 0 gap junctions)
+HyperID 39 completed - 0 synapses and 0 gap junctions found (0.17082853498868644s)
+Processing hyper voxel : 35/80 (1 neurons)
+Trying to place 341053 points to get 1339.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.04567767900880426s, hyperID: 35
 Create lookup table
-detectSynapses: 0 took 0.012495092989411205s
+detectSynapses: 0 took 0.009897198004182428s
 Create lookup table
-detectGapJunctions: 0.006281200039666146s
-Wrote hyper voxel 72 (0 synapses, 0 gap junctions)
-HyperID 72 completed - 0 synapses and 0 gap junctions found (0.1757718209992163s)
-Processing hyper voxel : 23/80 (1 neurons)
-Trying to place 359720 points to get 2096.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.06103006802732125s, hyperID: 23
+detectGapJunctions: 0.00580047897528857s
+Wrote hyper voxel 35 (0 synapses, 0 gap junctions)
+HyperID 35 completed - 0 synapses and 0 gap junctions found (0.1337053849711083s)
+Processing hyper voxel : 62/80 (1 neurons)
+Trying to place 2609 points to get 5.0 axon voxels filled
+placeSynapsesNoAxonSphere: 0.0011850289884023368s, hyperID: 62
 Create lookup table
-detectSynapses: 0 took 0.01019865897251293s
+detectSynapses: 0 took 0.010001748974900693s
 Create lookup table
-detectGapJunctions: 0.006106198998168111s
-Wrote hyper voxel 23 (0 synapses, 0 gap junctions)
-HyperID 23 completed - 0 synapses and 0 gap junctions found (0.14335199299966916s)
-Processing hyper voxel : 74/80 (1 neurons)
-Trying to place 254880 points to get 678.0 axon voxels filled
-placeSynapsesNoAxonSphere: 0.027457743999548256s, hyperID: 74
-Create lookup table
-detectSynapses: 0 took 0.009770319040399045s
-Create lookup table
-detectGapJunctions: 0.005963174044154584s
-Wrote hyper voxel 74 (0 synapses, 0 gap junctions)
-HyperID 74 completed - 0 synapses and 0 gap junctions found (0.11199680500430986s)
-Program run time: 101.25338952295715End of log. Closing file.
+detectGapJunctions: 0.0031092470162548125s
+Wrote hyper voxel 62 (0 synapses, 0 gap junctions)
+HyperID 62 completed - 0 synapses and 0 gap junctions found (0.08033566497033462s)
+Program run time: 111.48920158698456End of log. Closing file.

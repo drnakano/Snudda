@@ -1,4 +1,3 @@
-# Rewriting the create network config file to make it more general
 
 # !!! Currently writing full path for the files in the snudda data directory
 #     this makes moving between computers difficult. Fix...
@@ -54,7 +53,7 @@ class SnuddaInit(object):
                    "STN" : self.defineSTN,
                    "SNr" : self.defineSNr,
                    "Cortex" : self.defineCortex,
-                   "Thalamus" : self.defineThalamus }
+                   "Thalamus" : self.defineThalamus , "SNc" : self.defineSNc}
 
     if(structDef):
 
@@ -397,6 +396,7 @@ class SnuddaInit(object):
 
     # First check how many unique cells we hava available, then we
     # calculate how many of each to use in simulation
+    
     nInd = len(neuronFileList)
     nOfEachInd = np.zeros((nInd,))
     nOfEachInd[:] = int(numNeurons/nInd)
@@ -585,6 +585,7 @@ class SnuddaInit(object):
     MSD2dir = csDir + "/ispn"
     ChINdir = csDir + "/chin"
     LTSdir  = csDir + "/lts"
+    DAdir = csDir + "/da"
 
 
     self.regSize = 5
@@ -612,6 +613,16 @@ class SnuddaInit(object):
                     numNeurons=self.nMSD2, \
                     volumeID="Striatum")
 
+    #DAaxonDensity = ("r", "5000*1e12/3*np.exp(-r/120e-6)",350e-6)
+
+    # Define Dopaminergic input
+
+    #self.addNeurons("DopaminergicAxon",DAdir, 1, \
+    #                modelType="virtual",
+    #                rotationMode="",
+    #                volumeID="SNc", axonDensity = DAaxonDensity )
+
+
 
     # ChIN axon density,
     # We start with the axon length per unit volume, then we scale it
@@ -636,11 +647,11 @@ class SnuddaInit(object):
     # --> 13100 MS reachable by ChIN at most (or rather number of MS somas
     # within radius of axonal arbour)
     # -->  3-7% connectivity probability??
-
     # ChINaxonDensity = ("6*5000*1e12/3*np.exp(-d/60e-6)",350e-6)
 
     # func type, density function, max axon radius
-    ChINaxonDensity = ("r", "5000*1e12/3*np.exp(-r/120e-6)",350e-6)
+    ChINaxonDensity = ("r", "1500*1e12/3*np.exp(-r/120e-6)",350e-6)
+    #ChINaxonDensity = ("r", "10000*1e12/3*np.exp(-r/120e-6)",350e-6)
     # !!! TEST
     #ChINaxonDensity = ("xyz", "2*5000*1e12/3*np.exp(-np.sqrt(x**2+y**2+z**2)/120e-6)",[-350e-6,350e-6,-350e-6,350e-6,-350e-6,350e-6])
 
@@ -751,7 +762,7 @@ class SnuddaInit(object):
 
 
     # FS-FS gap junction, currently without pruning
-    if(True):
+    if(False):
       self.addNeuronTarget(neuronName="FSN",
                            targetName="FSN",
                            connectionType="GapJunction",
@@ -983,29 +994,69 @@ class SnuddaInit(object):
     # ================================================================
     # commenting gabaergic ChIN -> SPN connections Feb. 25th 2020 (RL)
     
-    if(False):
+    if(True):
         self.addNeuronTarget(neuronName="ChIN",
                              targetName="dSPN",
-                             connectionType="GABA",
+                             connectionType="Acetylcholine",
                              distPruning=None,
-                             f1=0.5, softMax=10, mu2=15,a3=0.1, # SM 15
+                             f1=None, softMax=None, mu2=None,a3=None, # SM 15
                              conductance=ChINgGABA,
                              parameterFile=pfChINdSPN,
-                             modFile="tmGabaA",
-                             channelParamDictionary=None)
-
+                             modFile="concACh",
+                             channelParamDictionary={
+	"GPCR": {
+		"neurotransmitter": ("concACh", "conc_ACH"),
+		"signalling": ("M4", "phenomenological"),
+		"ion_channel": {
+			"soma": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir_ms", "muscarinic_modulation")],
+			"dend": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir_ms", "muscarinic_modulation")]
+		},
+		"input-generator": ("spiking")
+	}
+})
+        self.addNeuronTarget(neuronName="ChIN",
+                             targetName="dSPN",
+                             connectionType="Acetycholine",
+                             distPruning=None,
+                             f1=None, softMax=None, mu2=None,a3=None, # SM 15
+                             conductance=ChINgGABA,
+                             parameterFile=pfChINdSPN,
+                             modFile="concACh",
+                             channelParamDictionary={
+	"GPCR": {
+		"neurotransmitter": ("concACh", "conc_ACH"),
+		"signalling": ("M4", "phenomenological"),
+		"ion_channel": {
+			"soma": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir_ms", "muscarinic_modulation")],
+			"dend": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir_ms", "muscarinic_modulation")]
+		},
+		"input-generator": ("time-series", "gpcr-input/concACh_M1_ts.txt")
+	}
+}
+)
         # TEST SETTING THIS TO ACh (SHOULD BE GABA), will this change?
         # !!!
         
         self.addNeuronTarget(neuronName="ChIN",
                              targetName="iSPN",
-                             connectionType="GABA",
+                             connectionType="Acetylcholine",
                              distPruning=None,
-                             f1=0.5, softMax=10, mu2=10,a3=0.1, # SM 12
+                             f1=None, softMax=None, mu2=None,a3=None, # SM 12
                              conductance=ChINgGABA,
                              parameterFile=pfChINiSPN,
-                             modFile="tmGabaA",
-                             channelParamDictionary=None)
+                             modFile="concACh",
+                             channelParamDictionary={
+	"GPCR": {
+		"neurotransmitter": ("concACh", "conc_ACH"),
+		"signalling": ("M4", "phenomenological"),
+		"ion_channel": {
+			"soma": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir_ms", "muscarinic_modulation")],
+			"dend": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir_ms", "muscarinic_modulation")]
+		},
+		"input-generator": ("differential-equation", "gpcr-input/concACh_M1_diffeq.txt")
+	}
+}
+)
     # ================================================================
     
     # We got an increasing connection distribution with distance, looks fishy
@@ -1014,13 +1065,45 @@ class SnuddaInit(object):
     if(True):
       self.addNeuronTarget(neuronName="ChIN",
                            targetName="LTS",
-                           connectionType="ACh",
+                           connectionType="AChM",
                            distPruning=None,
-                           f1=0.5, softMax=None, mu2=10,a3=None, # SM 12
+                           f1=None, softMax=None, mu2=None,a3=None, # SM 12
                            conductance=ChINgACh,
                            parameterFile=pfChINLTS,
                            modFile="concACh", # !!! DOES NOT YET EXIST --- FIXME
-                           channelParamDictionary= {"GPCR": {"neurotransmitter" : ("concACh" , "conc_ACH"),"signalling" : ("M4","Ach_M4R"),"ion_channel": [("gbar_kir23","muscarinic_modulation")]}})
+                           channelParamDictionary= {"GPCR": {
+		"neurotransmitter": ("concACh", "conc_ACH"),
+		"signalling": ("M4", "Ach_M4R"),
+		"ion_channel": {
+			"soma": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir23", "muscarinic_modulation")],
+			"dend": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir23", "muscarinic_modulation")]
+		},
+		"input-generator": ("differential-equation", "gpcr-input/concACh_M1.txt")
+	}
+}
+)
+
+    if(False):
+      self.addNeuronTarget(neuronName="ChIN",
+                           targetName="ChIN",
+                           connectionType="AChM",
+                           distPruning=None,
+                           f1=None, softMax=None, mu2=None,a3=None, # SM 12
+                           conductance=ChINgACh,
+                           parameterFile=pfChINLTS,
+                           modFile="concACh", # !!! DOES NOT YET EXIST --- FIXME
+                           channelParamDictionary= {"GPCR": {
+		"neurotransmitter": ("concACh", "conc_ACH"),
+		"signalling": ("M4", "Ach_M4R"),
+		"ion_channel": {
+			"soma": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir23", "muscarinic_modulation")],
+			"dend": [("gbar_naf_ms", "muscarinic_modulation"), ("gbar_kir23", "muscarinic_modulation")]
+		},
+		"input-generator": ("differential-equation", "gpcr-input/concACh_M1.txt")
+	}
+}
+)
+
       
 
     # !!! USE SAME PARAMS FOR FS AS FOR MS??
@@ -1071,7 +1154,7 @@ class SnuddaInit(object):
                          connectionType="NO", # also NO, nitric oxide
                          distPruning=None,
                          f1=0.5, softMax=10, mu2=3, a3=0.4,
-                         conductance=LTSgGABA,
+                         conductance=1e-9,
                          parameterFile=pfLTSChIN,
                          modFile="NO",
                          channelParamDictionary=None)
@@ -1166,7 +1249,7 @@ class SnuddaInit(object):
                          meshBinWidth=5e-5)
 
 
-    CortexDir = "morphology/InputAxons/Cortex/Reg10/"
+    CortexDir = "InputAxons/Cortex"
 
     # Add cortex axon
 
@@ -1222,7 +1305,7 @@ class SnuddaInit(object):
   ############################################################################
 
   def defineThalamus(self,nNeurons):
-
+    
     if(nNeurons <= 0):
       # No neurons specified, skipping structure
       return
@@ -1241,12 +1324,15 @@ class SnuddaInit(object):
 
     # Define neurons
 
-    ThalamusDir = "morphology/InputAxons/Thalamus/Reg10/"
+    ThalamusDir = "InputAxons/Thalamus"
+
 
     self.addNeurons("ThalamusAxon",ThalamusDir, self.nThalamus, \
                     modelType="virtual",
                     rotationMode="",
                     volumeID="Thalamus")
+
+   
 
 
     # Define targets
@@ -1265,7 +1351,7 @@ class SnuddaInit(object):
                          distPruning=None,
                          f1=1.0, softMax=3, mu2=2.4,a3=None,
                          conductance=ThalamusGlutCond,
-                         parameterFile=thalamusSynParMs,
+                         parameterFile=thalamusSynParMS,
                          modFile="tmGlut",
                          channelParamDictionary=None)
 
@@ -1293,6 +1379,116 @@ class SnuddaInit(object):
 
 
   ############################################################################
+
+  def defineSNc(self,nNeurons):
+        
+    if(nNeurons <= 0):
+      # No neurons specified, skipping structure
+      return
+
+    # Neurons with thalamustriatal axons
+    self.nSNc = nNeurons
+
+    self.nTotal += nNeurons
+
+    # Using start location of neuron DOI: 10.25378/janelia.5521765 for centre
+    self.defineStructure(structName="SNc",
+                        structMesh="cube",
+                         structCentre=np.array([3540e-6,4645e-6,5081e-6]),
+                         sideLen=200e-6,
+                         meshBinWidth=5e-5)
+
+    # Define neurons
+
+    SNcDir = "InputAxons/SNc"
+
+    DAaxonDensity = ("r", "100000*1e12/3*np.exp(-r/400e-6)",350e-6)
+
+    self.addNeurons("DopaminergicAxon",SNcDir, self.nSNc, \
+                    modelType="virtual",
+                    rotationMode="random",
+                    volumeID="SNc" , axonDensity =DAaxonDensity)
+
+   
+
+
+    # Define targets
+
+    
+    
+    DopaminergicCond = [1e-9,0.1e-9]
+
+    self.addNeuronTarget(neuronName="DopaminergicAxon",
+                         targetName="dSPN",
+                         connectionType="Dopamine",
+                         distPruning=None,
+                         f1=None, softMax=None, mu2=None,a3=None,
+                         conductance=DopaminergicCond,
+                         parameterFile=None,
+                         modFile="concDA",
+                         channelParamDictionary={
+	"GPCR": {
+		"neurotransmitter": ("concDA", "conc_DA"),
+		"signalling": ("D1", "phenomenological"),
+		"ion_channel": {
+			"soma": [("gbar_naf_ms", "conc_DA"), ("gbar_kir_ms", "conc_DA")],
+			"dend": [("gbar_naf_ms", "conc_DA"), ("gbar_kir_ms", "conc_DA")]
+		},
+		"input-generator": ("spiking")
+	}
+})
+    self.addNeuronTarget(neuronName="DopaminergicAxon",
+                         targetName="iSPN",
+                         connectionType="Dopamine",
+                         distPruning=None,
+                         f1=None, softMax=None, mu2=None,a3=None,
+                         conductance=DopaminergicCond,
+                         parameterFile=None,
+                         modFile="concDA",
+                         channelParamDictionary={
+	"GPCR": {
+		"neurotransmitter": ("concDA", "conc_DA"),
+		"signalling": ("D2", "phenomenological"),
+		"ion_channel": {
+			"soma": [("gbar_naf_ms", "conc_DA"), ("gbar_kir_ms", "conc_DA")],
+			"dend": [("gbar_naf_ms", "conc_DA"), ("gbar_kir_ms", "conc_DA")]
+		},
+		"input-generator": ("spiking")
+	}
+})
+
+    # Picked D1 parameters, lack
+    '''
+    self.addNeuronTarget(neuronName="DopaminergicAxon",
+                         targetName="FSN",
+                         connectionType="Dopamine",
+                         distPruning=None,
+                         f1=None, softMax=None, mu2=None,a3=None,
+                         conductance=DopaminergicCond,
+                         parameterFile=None,
+                         modFile="concDA",
+                         channelParamDictionary={"GPCR": {"neurotransmitter" : ("concDA" , "conc_DA"),"signalling" : ("D2","phenomenological"),"ion_channel": [("gbar_naf_ms","conc_DA"),("gbar_kir_ms","conc_DA")]}})
+
+    self.addNeuronTarget(neuronName="DopaminergicAxon",
+                         targetName="LTS",
+                         connectionType="Dopamine",
+                         distPruning=None,
+                         f1=None, softMax=None, mu2=None,a3=None,
+                         conductance=DopaminergicCond,
+                         parameterFile=None,
+                         modFile="concDA",
+                         channelParamDictionary={"GPCR": {"neurotransmitter" : ("concDA" , "conc_DA"),"signalling" : ("D2","phenomenological"),"ion_channel": [("gbar_naf_ms","conc_DA"),("gbar_kir_ms","conc_DA")]}})
+
+    self.addNeuronTarget(neuronName="DopaminergicAxon",
+                         targetName="ChIN",
+                         connectionType="Dopamine",
+                         distPruning=None,
+                         f1=None, softMax=None, mu2=None,a3=None,
+                         conductance=DopaminergicCond,
+                         parameterFile=None,
+                         modFile="concDA",
+                         channelParamDictionary={"GPCR": {"neurotransmitter" : ("concDA" , "conc_DA"),"signalling" : ("D2","phenomenological"),"ion_channel": [("gbar_naf_ms","conc_DA"),("gbar_kir_ms","conc_DA")]}})
+'''
 
 if __name__ == "__main__":
 

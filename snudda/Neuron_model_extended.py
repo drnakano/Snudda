@@ -235,6 +235,7 @@ class NeuronModel(ephys.models.CellModel):
       # Negative numbers for axon
       for ic,c in enumerate(self.icell.axon):
         self.sectionLookup[-ic-1] = c
+      
 
     try:
       sec = [self.sectionLookup[x] for x in sectionID]

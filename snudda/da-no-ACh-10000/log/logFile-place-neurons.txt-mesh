@@ -1,0 +1,22 @@
+Found old cache file (da-no-ACh-10000/mesh/Striatum-cube-mesh-0.00033949878508594085.obj-339-cache.pickle), ignoring.
+Running in serial
+Voxel mask: 5x5x5
+Processing x = 0
+Processing x = 1
+Processing x = 2
+Processing x = 3
+Processing x = 4
+Fraction of border voxels: 0.0
+Saving mesh cache file da-no-ACh-10000/mesh/Striatum-cube-mesh-0.00033949878508594085.obj-339-cache.pickle
+Calculation time: 0.007207078000647016 s
+Setup voxel list
+Setup place neurons
+Update padding mask
+Regenerating new random pool
+Setup done
+Inner voxel bin volume: 0.0 mm³
+Placed 1 in 0.002760376999503933 s
+Placed 1 in 0.0005261499900370836 s
+Placed 1 in 0.0006855709943920374 s
+Placed 30 in 0.04492107300029602 s
+Placed 30 in 0.055723157987813465 s

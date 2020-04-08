@@ -375,7 +375,11 @@ class SnuddaSimulate(object):
           self.inputData = h5py.File(self.getPath(self.inputFile),'r')
 
           name = self.network_info["neurons"][ID]["name"]
-          spikes = self.inputData["input"][ID]["activity"]["spikes"][:,0]
+          #import pdb
+          #pdb.set_trace()
+          #spikes = self.inputData["input"][str(ID)]["activity"]["spikes"][:,0]
+          #spikes = self.inputData["input"][str(ID)]["activity"]["spikes"][:]
+          spikes = np.array([0,0.1,0.2,0.3])
 
         # Creating NEURON VecStim and vector
         # https://www.neuron.yale.edu/phpBB/viewtopic.php?t=3125
@@ -471,6 +475,8 @@ class SnuddaSimulate(object):
 
     self.pc.barrier()
 
+    #self.addSynapseFinalise()
+
   ############################################################################
 
   def connectNetworkSynapses(self):
@@ -490,7 +496,8 @@ class SnuddaSimulate(object):
       # Find the next group of synapses
       nextRow = nextRowSet[1] # 2nd number was not included in range
       nextRowSet = self.findNextSynapseGroup(nextRow)
-    self.addSynapseFinalise()
+      print(self.pc.id())
+    #self.addSynapseFinalise()
 
   ############################################################################
 
@@ -572,7 +579,8 @@ class SnuddaSimulate(object):
   # Processing the range(startRow,endRow) (ie, to endRow-1)
 
   def connectNeuronSynapses(self,startRow,endRow):
-
+    #import pdb
+    #pdb.set_trace()
     sourceIDs = self.synapses[startRow:endRow,0]
     destID = self.synapses[startRow,1]
     assert (self.synapses[startRow:endRow,1] == destID).all()
@@ -656,7 +664,7 @@ class SnuddaSimulate(object):
 
     segIDA = self.gapJunctions[GJidxA,2]
     segIDB = self.gapJunctions[GJidxB,3]
-
+    
     compartmentA = [self.neurons[x].mapIDtoCompartment([y])[0] \
                     for (x,y) in zip(neuronIDA,segIDA)]
     compartmentB = [self.neurons[x].mapIDtoCompartment([y])[0] \
@@ -749,7 +757,8 @@ class SnuddaSimulate(object):
   # Verify that the gap junctions conducts currents in both directions
 
   def connectNeuronGapJunctions(self,startRow,endRow):
-
+    import pdb
+    pdb.set_trace()
     sourceID = self.gapJunctions[startRow:endRow,0]
     destID = self.gapJunctions[startRow,1]
 
@@ -871,27 +880,35 @@ class SnuddaSimulate(object):
   def addSynapseFinalise(self):
 
     cellIDsource = None
-    dendCompartment = 'Last_synapse'
+    dendCompartment = 'lastSynapse'
     sectionDist = None
     conductance = None
     parameterID = list()
     synapseTypeID = 4
     axonDist=None
 
-    import pdb
-    pdb.set_trace()
-    
     return self.addSynapseGPCR(cellIDsource,dendCompartment,sectionDist,conductance,parameterID,synapseTypeID,axonDist=None)
+
+  def PCbarrier(self):
+
+    print("wait")
+
+    self.pc.barrier()
   
   
   def addSynapseGPCR(self, cellIDsource, dendCompartment, sectionDist, conductance,parameterID,synapseTypeID,axonDist=None):
 
-
-    if 'Last_synapse' in dendCompartment:
+    # Check if the synapse if lastSynapse or if the information about the synapse has to be extracted
+    
+    if 'lastSynapse' in dendCompartment:
       print("Finish synapse")
-      #import pdb
-      #pdb.set_trace()
-      
+      print(self.gpcrModulation)
+      print(self.previousGPCRsection)
+      print(dendCompartment)
+      import pdb
+      pdb.set_trace()
+      cellName=None
+    
     else:
       
       (channelModule,parData) = self.synapseParameters[synapseTypeID]
@@ -900,8 +917,18 @@ class SnuddaSimulate(object):
 
       parSet = parData[parID]
 
+      import pdb
+      pdb.set_trace()
+
+      '''
+      Extracting the typ of concentration mechanisms e.g. concDA or concACh 
+      (name of the modfile which produces the conversion of spiking to neurotransmitter concentration)
+      '''
+      
       neurotransmitter_release = parSet["GPCR"]["neurotransmitter"][0]
       GPCR_type = parSet["GPCR"]["signalling"][0]
+      
+      cellName = str(dendCompartment).split(".")[0] # The cell which synapses are being added to - as the synapse file is ordedered after the individual cells.
       
       if(axonDist is not None):
         # axon dist is in micrometer, want delay in ms
@@ -912,83 +939,89 @@ class SnuddaSimulate(object):
       if(False):
         self.writeLog("Synapse delay: " + str(synapseDelay) + " ms")
 
-      
 
-      #import pdb
-      #pdb.set_trace()
-
-   
-    '''
-    Checking if another pointprocess of type - concACh has been placed in the section -
-    as density mechanisms are inserted into sections while the conductance is defined per segment 
-
-    This means that when a density mechanisms (like kir23 with a pointer) is 
-    inserted something has to point at that mechanism in each SEGMENT otherwise there is a "segmentation fault".
-
-    Pointprocesses are placed in SEGMENT so we would like the point process to point to 
-    the density mechanism in that segment and if several synapses are found in a segment, 
-    they should all point to the same pointprocess.
-
-    This means that there are two steps in adding this synapse - 
-    1. if there are no synapses in the section - synapses have to be placed in all segments 
-       and connected to the density mechanism in each segment
-    2. if there are synapses in the section - the netcon connection should be made with 
-       the point process which is in the segment which equals the synapses sectionDist 
-       i.e. position along the section
     
-    '''
-    #print(dendCompartment)
-	
-    #dendCompartment == self.previousGPCRsection
-    
-    if(self.previousGPCRsection is None or self.previousGPCRsection == str(dendCompartment).split(".")[0]):
+    if(self.previousGPCRsection is cellName or len(self.gpcrModulation) is 0):
 
-      #import pdb
-      #pdb.set_trace()
+      import pdb
+      pdb.set_trace()
 
       self.previousGPCRsection = str(dendCompartment).split(".")[0]
+
+      strDendCompartment=str(dendCompartment)
+      numberOfNseg = dendCompartment.nseg
+      strSectionDistCurrent = str(int(sectionDist*numberOfNseg))
+
+      strCompartmentSection = "_".join([strDendCompartment,strSectionDistCurrent]
       
-      print(self.previousGPCRsection)
+      if (self.gpcrModulation is None):
 
-      if(neurotransmitter_release in self.gpcrModulation.keys() and dendCompartment in self.gpcrModulation[neurotransmitter_release][GPCR_type]['section']):
-        
-        #import pdb
-        #pdb.set_trace()
-        self.gpcrModulation[neurotransmitter_release][GPCR_type]["section_dist_"+str(dendCompartment)].append(sectionDist)
-        self.gpcrModulation[neurotransmitter_release][GPCR_type]["presynaptic_cell_"+str(dendCompartment)].append(cellIDsource)
-        
-      elif (neurotransmitter_release in self.gpcrModulation.keys() and str(dendCompartment) not in self.gpcrModulation[neurotransmitter_release][GPCR_type]):
-
-        
-        self.gpcrModulation[neurotransmitter_release][GPCR_type]["section"].append(dendCompartment)
-        self.gpcrModulation[neurotransmitter_release][GPCR_type].update({"section_dist_"+str(dendCompartment): [sectionDist]})
-        self.gpcrModulation[neurotransmitter_release][GPCR_type].update({"presynaptic_cell_"+str(dendCompartment) : [cellIDsource]})
-        
+        self.gpcrModulation.update({ strDendCompartment : { strCompartmentSection : \
+                                     {GPCR_type :{"GPCR_signalling" : [parSet["GPCR"], channelModule,conductance,synapseDelay], \
+                                                  "section_dist_"+str(dendCompartment) : [sectionDist],"section" :[dendCompartment], \
+                                                  "presynaptic_cell_" + str(dendCompartment) : [cellIDsource] }}}})
       else:
-        #import pdb
-        #pdb.set_trace()
-        self.gpcrModulation.update({ neurotransmitter_release : {GPCR_type :{"GPCR_signalling" : [parSet, channelModule,conductance,synapseDelay], "section_dist_"+str(dendCompartment) : [sectionDist],"section" :[dendCompartment], "presynaptic_cell_" + str(dendCompartment) : [cellIDsource] }}})
 
-        #import pdb
-        #pdb.set_trace()
+        if strDendCompartment in self.gpcrModulation.keys():
 
+          gpcrModulationGPCRComparment = self.gpcrModulation[strDendCompartment]
+          
+          if strCompartmentSection in gpcrModulationGPCRComparment.keys():
+
+              currenGPCRfoundOnSegment = gpcrModulationGPCRCompartment[strCompartmentSection]
+
+              if GPCR_type in currenGPCRfoundOnSegment.keys():
+                                       
+                  currenGPCRfoundOnSegment[GPCR_type]["section_dist_"+str(strDendCompartment)].append(sectionDist) # make sure you change on the self.gpcrModulation
+                  currenGPCRfoundOnSegment[GPCR_type]["presynaptic_cell_"+str(strDendCompartment)].append(cellIDsource)
+                                       
+              else:
+                  self.gpcrModulation[strDendComparment][strCompartmentSection].update({GPCR_type : \
+                                                  {"GPCR_signalling" : [parSet["GPCR"], channelModule,conductance,synapseDelay], \
+                                                  "section_dist_"+str(dendCompartment) : [sectionDist],"section" :[dendCompartment], \
+                                                  "presynaptic_cell_" + str(dendCompartment) : [cellIDsource] }})
+                                       
+                  
+                                       
+
+          else:
+            self.gpcrModulation[neurotransmitter_release].update({GPCR_type :{"GPCR_signalling" : [parSet, channelModule,conductance,synapseDelay], \
+                                                                                 "section_dist_"+str(dendCompartment) : [sectionDist],"section" :[dendCompartment], \
+                                                                                 "presynaptic_cell_" + str(dendCompartment) : [cellIDsource] }})         
+        
+        else:
+          self.gpcrModulation.update({ neurotransmitter_release : {GPCR_type :{"GPCR_signalling" : [parSet, channelModule,conductance,synapseDelay],\
+                                                                                 "section_dist_"+str(dendCompartment) : [sectionDist],"section" :[dendCompartment],\
+                                                                                 "presynaptic_cell_" + str(dendCompartment) : [cellIDsource] }}})
+            
+      
     else:
-      
-      self.previousGPCRsection = str(dendCompartment).split(".")[0]
-      
+      self.writeLog(" Adding GPCR synapses")
+
+      '''
+      The self.gcprModulation has saved the information about synapse location and 
+      GPCR signalling for cell at which synapses have been added up to the previous function call.
+      '''
+
+      # 
+           
       for gpcr_neurotransmitter, gpcr_receptor in self.gpcrModulation.items():
 
         for receptor_subtype, gpcr_signalling in gpcr_receptor.items():
-           #print(self.gpcrModulation)
            
-           #import pdb
-           #pdb.set_trace()
+           import pdb
+           pdb.set_trace()
           
            neurotransmitter = gpcr_signalling["GPCR_signalling"][0]['GPCR']["neurotransmitter"][0]
            neurotransmitter_pointer =  gpcr_signalling["GPCR_signalling"][0]['GPCR']["neurotransmitter"][1]
-      
-           GPC_receptor =  gpcr_signalling["GPCR_signalling"][0]['GPCR']['signalling'][0]
-           GPC_receptor_pointer =  gpcr_signalling["GPCR_signalling"][0]['GPCR']['signalling'][1]
+
+           if ("phenomenological" in gpcr_signalling["GPCR_signalling"][0]['GPCR']['signalling'][1]):
+             print("phenomenological")
+             GPC_receptor =  gpcr_signalling["GPCR_signalling"][0]['GPCR']['signalling'][0]
+             
+           else:
+             GPC_receptor =  gpcr_signalling["GPCR_signalling"][0]['GPCR']['signalling'][0]
+             GPC_receptor_pointer =  gpcr_signalling["GPCR_signalling"][0]['GPCR']['signalling'][1]
 
            ionchannel_modulation =  gpcr_signalling["GPCR_signalling"][0]['GPCR']['ion_channel']
 
@@ -1002,44 +1035,61 @@ class SnuddaSimulate(object):
              for modulated_section in gpcr_signalling['section']:
 
                self.gpcrModulation[gpcr_neurotransmitter][receptor_subtype].update({ "synapse_location_"+str(modulated_section) : []})
+
+               try:
+                 modulated_section.insert("_".join(mod_ion_channel[0].split("_")[1:])+"mod")
+               except:
+                 import pdb
+                 pdb.set_trace()
                
-               modulated_section.insert(mod_ion_channel[0].split("_")[-1]+'mod')
-              
-           
                for seg in modulated_section:
-                 #import pdb
-                 #pdb.set_trace()
+                 import pdb
+                 pdb.set_trace()
+                 # look at seg.L
                  syn = neurotransmitter_release_mod(seg)
 
                  neurotransmitter_concentration=syn._ref_concentration
-
-                 evalStr = "self.sim.neuron.h." + GPC_receptor
-
-                 GPCR_modfile = eval(evalStr)
-                 GPCR_synapse = GPCR_modfile(seg)
-
-                 muscarinic_recording = self.sim.neuron.h.Vector()
-                 muscarinic_recording.record(GPCR_synapse._ref_Ach_M4R)
-                 self.concAChrecording.update({str(syn) + str(seg) : muscarinic_recording})
 
                  evalStrpointer = "self.sim.neuron.h.setpointer"
 
                  Strpointer = eval(evalStrpointer)
 
-                 Strpointer(neurotransmitter_concentration,neurotransmitter_pointer,GPCR_synapse)
                  conductance_modulated_channel=getattr(seg,mod_ion_channel[0])
-
 
                  setattr(seg,mod_ion_channel[0]+'mod',conductance_modulated_channel)
                  setattr(seg,mod_ion_channel[0],0)
 
-                 pointermodulation=getattr(GPCR_synapse,'_ref_' +GPC_receptor_pointer)
 
-                 Strpointer(pointermodulation,mod_ion_channel[1] ,getattr(seg,mod_ion_channel[0].split("_")[-1]+'mod'))
+                 if ("phen" not in gpcr_signalling["GPCR_signalling"][0]['GPCR']['signalling'][1]):
+                
+                   evalStr = "self.sim.neuron.h." + GPC_receptor
+
+                   GPCR_modfile = eval(evalStr)
+                   GPCR_synapse = GPCR_modfile(seg)
+                   Strpointer(neurotransmitter_concentration,neurotransmitter_pointer,GPCR_synapse)
+                   pointermodulation=getattr(GPCR_synapse,'_ref_' +GPC_receptor_pointer)
+                   self.synapseList.append(GPCR_synapse)
+
+                   Strpointer(pointermodulation,mod_ion_channel[1] ,getattr(seg,"_".join(mod_ion_channel[0].split("_")[1:])+'mod'))
+                   
+                 else:
+
+                  
+                   Strpointer(neurotransmitter_concentration,neurotransmitter_pointer ,getattr(seg,"_".join(mod_ion_channel[0].split("_")[1:])+'mod'))
+                   
+                   
+                
+
+                 #muscarinic_recording = self.sim.neuron.h.Vector()
+                 #muscarinic_recording.record(GPCR_synapse._ref_Ach_M4R)
+                 #self.concAChrecording.update({str(syn) + str(seg) : muscarinic_recording})
+
+                 
+                 
 
 
                  self.gpcrModulation[gpcr_neurotransmitter][receptor_subtype]["synapse_location_"+str(modulated_section)].append(syn)
-               self.synapseList.append(GPCR_synapse)
+               
                self.synapseList.append(syn)
         
 
@@ -1075,43 +1125,52 @@ class SnuddaSimulate(object):
                 self.netConList.append(nc)
                 self.synapseList.append(syn_gpcr)
 
-
-      self.gpcrModulation = dict()
+      
+      del self.gpcrModulation[neurotransmitter][GPC_receptor]
+      
       if 'Last_synapse' not in dendCompartment:
-        self.gpcrModulation.update({ neurotransmitter_release : {GPC_receptor :
+
+        # Adding the current synapse information to the next steps as the cellname has changed at this position
+        
+        self.previousGPCRsection = str(dendCompartment).split(".")[0]
+        self.gpcrModulation.update({ neurotransmitter_release : {GPCR_type :
                                                          {"GPCR_signalling" : [parSet, channelModule,conductance,synapseDelay],"section_dist_"+str(dendCompartment) : [sectionDist],
                                                           "section" :[dendCompartment],"presynaptic_cell_"+str(dendCompartment) : [cellIDsource] }}})
 
   def addSynapse(self, cellIDsource, dendCompartment, sectionDist, conductance,
                  parameterID,synapseTypeID,axonDist=None):
 
+    
     # You can not locate a point process at
     # position 0 or 1 if it needs an ion
+    
     if(sectionDist == 0.0):
       sectionDist = 0.01
     if(sectionDist == 1.0):
       sectionDist = 0.99
-
+    
     (channelModule,parData) = self.synapseParameters[synapseTypeID]
 
     if(parData is None):
       syn = channelModule(dendCompartment(sectionDist))
 
     elif(parData is not None):
+      
       # Picking one of the parameter sets stored in parData
       parID = parameterID % len(parData)
 
       parSet = parData[parID]
 
       if('GPCR' in parSet):
-        #import pdb
-        #pdb.set_trace()
-        #print(channelModule)
+
+        # The synapse is GPCR modulation and uses addSynapseGPCR 
+        
         return self.addSynapseGPCR(cellIDsource, dendCompartment, sectionDist,conductance,
                                    parameterID,synapseTypeID,axonDist)
       else:
         
-          syn = channelModule(dendCompartment(sectionDist))  
+          syn = channelModule(dendCompartment(sectionDist))
+          
           for par in parSet:
             if(par == "expdata" or par == "cond"):
               # expdata is not a parameter, and cond we take from synapse matrix
@@ -1144,6 +1203,12 @@ class SnuddaSimulate(object):
     #  self.writeLog("Synapse type not implemented: ", synapseType)
     #  import pdb
     #  pdb.set_trace()
+    if "NO" in str(channelModule):
+      #import pdb
+      #pdb.set_trace()
+      NO_recording = self.sim.neuron.h.Vector()
+      NO_recording.record(syn._ref_m)
+      self.concAChrecording.update({str(syn)+str(dendCompartment)+str(sectionDist): NO_recording})
 
     if(axonDist is not None):
       # axon dist is in micrometer, want delay in ms
@@ -1156,6 +1221,7 @@ class SnuddaSimulate(object):
 
     # What do we do if the GID does not exist?
     # print("GID exists:" + str(self.pc.gid_exists(cellIDsource)))
+
 
     if(self.isVirtualNeuron[cellIDsource]):
       # Source is a virtual neuron, need to read and connect input
@@ -1348,7 +1414,8 @@ class SnuddaSimulate(object):
     self.inputData = h5py.File(inputFile,'r')
 
     for neuronID, neuron in self.neurons.items():
-
+      import pdb
+      pdb.set_trace
       #if(neuronID != 0):
       #  self.writeLog("Skipping input temporarilly")
       #  continue

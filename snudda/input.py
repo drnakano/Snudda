@@ -439,7 +439,8 @@ class SnuddaInput(object):
           
         elif(inputInf["generator"] == "csv"):
           csvFile = inputInf["csvFile"] % neuronID
-          
+          import pdb
+          pdb.set_trace()
           self.neuronInput[neuronID][inputType]["spikes"] \
             = np.genfromtxt(csvFile, delimiter=',')
           self.neuronInput[neuronID][inputType]["generator"] = "csv"
@@ -1163,7 +1164,8 @@ class SnuddaInput(object):
     # synapse density
 
     try:
-
+      #import pdb
+      #pdb.set_trace()
       timeRange = (start,end)
       
       if(inputType.lower() == "VirtualNeuron".lower()):
@@ -1210,7 +1212,8 @@ class SnuddaInput(object):
       
     # We need to pick which parameter set to use for the input also
     parameterID = np.random.randint(1e6,size=nInputs)
-      
+    #import pdb
+    #pdb.set_trace()
     # We need to keep track of the neuronID, since it will all be jumbled
     # when doing asynchronous prallellisation
     return (neuronID, inputType, spikes, inputLoc, synapseDensity,freq,

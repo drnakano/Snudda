@@ -1,0 +1,156 @@
+Using networkFile: muscarinic-NO/network-pruned-synapses.hdf5
+Using inputFile: muscarinic-NO/input-spikes.hdf5
+Using logFile: muscarinic-NO/log/network-simulation-log.txt
+Worker 0: Loading network from muscarinic-NO/network-pruned-synapses.hdf5
+Loading config file muscarinic-NO/network-config.json
+1: Memory status: 67% free
+Distributing neurons.
+Setup neurons
+Node 1 - cell 1 ChIN_0NNeuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 4 ChIN_NeNeuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 8 ChIN_0NNeuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 12 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!!! Popping extra segment from neuron -- temp fix!NNode 3 - cell 19 LTS_0NNeuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!NNode 3 - cell 23 ChINNeNeuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 24 ChIN_NeNeuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+NNode 3 - cell 31 ChINNNeNeuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 3 - cell 35 LTS_Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 1 - cell 37 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 1 - cell 41 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 1 - cell 45 ChINeuron iSPN_0 resting voltage = -86
+!!! Popping extra segment from neuron -- temp fix!
+Node 0 - cell 48 LTS_0Neuron FSN_2 resting voltage = -85
+!!! Popping extra segment from neuron -- temp fix!
+Node 2 - cell 54 ChIN_0
+Neuron ChIN_0 resting voltage = -60
+!!! Popping extra segment from neuron -- temp fix!
+Node 2 - cell 58 LTS_0
+Neuron LTS_0 resting voltage = -75
+!!! Popping extra segment from neuron -- temp fix!
+Node 2 - cell 62 LTS_0
+Neuron LconnectNetworkSynapses
+Adding gap junctions.
+connectNetworkGapJunctionsLOCAL
+Finding node local gap junctions...
+3: Memory status: 66% free
+Adding external (cortical, thalamic) input from muscarinic-NO/input-spikes.hdf5
+3: Memory status: 66% free
+Adding somatic recordings
+3: Memory status: 66% free
+Running simulation for 10.0 s
+Simulation done.
+Simulation run time: 5418.414631257998 s
+Writing spike times to muscarinic-NO/simulation/network-output-sSimulatioSimulation run time: 5449.311979867009 s
+Writing spike times to muscarinic-NO/simulation/network-output-spikes-666.txt
+ated time left: 4929.3 s
+4% done. Elapsed: 204.2 s, estimated time left: 4901.5 s
+5% done. Elapsed: 256.1 s, estimated time left: 4866.7 s
+6% done. Elapsed: 310.6 s, estimated time left: 4866.0 s
+7% done. Elapsed: 367.4 s, estimated time left: 4880.9 s
+8% done. Elapsed: 423.6 s, estimated time left: 4871.3 s
+9% done. Elapsed: 479.7 s, estimated time left: 4850.7 s
+10% done. Elapsed: 536.3 s, estimated time left: 4826.9 s
+11% done. Elapsed: 592.6 s, estimated time left: 4795.1 s
+12% done. Elapsed: 648.9 s, estimated time left: 4758.7 s
+13% done. Elapsed: 705.0 s, estimated time left: 4717.9 s
+14% done. Elapsed: 760.4 s, estimated time left: 4671.3 s
+15% done. Elapsed: 815.5 s, estimated time left: 4621.4 s
+16% done. Elapsed: 870.3 s, estimated time left: 4568.9 s
+17% done. Elapsed: 924.8 s, estimated time left: 4515.0 s
+18% done. Elapsed: 979.3 s, estimated time left: 4461.0 s
+19% done. Elapsed: 1033.0 s, estimated time left: 4403.7 s
+20% done. Elapsed: 1086.1 s, estimated time left: 4344.3 s
+21% done. Elapsed: 1139.0 s, estimated time left: 4284.8 s
+22% done. Elapsed: 1191.9 s, estimated time left: 4225.8 s
+23% done. Elapsed: 1244.5 s, estimated time left: 4166.3 s
+24% done. Elapsed: 1297.3 s, estimated time left: 4108.0 s
+25% done. Elapsed: 1349.6 s, estimated time left: 4048.8 s
+26% done. Elapsed: 1402.3 s, estimated time left: 3991.1 s
+27% done. Elapsed: 1454.8 s, estimated time left: 3933.3 s
+28% done. Elapsed: 1507.3 s, estimated time left: 3875.8 s
+29% done. Elapsed: 1560.0 s, estimated time left: 3819.2 s
+30% done. Elapsed: 1612.5 s, estimated time left: 3762.5 s
+31% done. Elapsed: 1672.9 s, estimated time left: 3723.6 s
+32% done. Elapsed: 1728.7 s, estimated time left: 3673.4 s
+33% done. Elapsed: 1784.9 s, estimated time left: 3623.8 s
+34% done. Elapsed: 1838.6 s, estimated time left: 3569.1 s
+35% done. Elapsed: 1893.4 s, estimated time left: 3516.3 s
+36% done. Elapsed: 1948.0 s, estimated time left: 3463.1 s
+37% done. Elapsed: 2002.9 s, estimated time left: 3410.4 s
+38% done. Elapsed: 2057.4 s, estimated time left: 3356.8 s
+39% done. Elapsed: 2111.5 s, estimated time left: 3302.5 s
+40% done. Elapsed: 2166.1 s, estimated time left: 3249.1 s
+41% done. Elapsed: 2225.2 s, estimated time left: 3202.1 s
+42% done. Elapsed: 2281.2 s, estimated time left: 3150.2 s
+43% done. Elapsed: 2336.0 s, estimated time left: 3096.5 s
+44% done. Elapsed: 2392.4 s, estimated time left: 3044.9 s
+45% done. Elapsed: 2446.0 s, estimated time left: 2989.6 s
+46% done. Elapsed: 2499.0 s, estimated time left: 2933.6 s
+47% done. Elapsed: 2551.7 s, estimated time left: 2877.5 s
+48% done. Elapsed: 2604.6 s, estimated time left: 2821.6 s
+49% done. Elapsed: 2657.5 s, estimated time left: 2765.9 s
+50% done. Elapsed: 2709.9 s, estimated time left: 2709.9 s
+51% done. Elapsed: 2763.1 s, estimated time left: 2654.7 s
+52% done. Elapsed: 2815.6 s, estimated time left: 2599.0 s
+53% done. Elapsed: 2867.9 s, estimated time left: 2543.3 s
+54% done. Elapsed: 2920.4 s, estimated time left: 2487.7 s
+55% done. Elapsed: 2972.9 s, estimated time left: 2432.3 s
+56% done. Elapsed: 3025.4 s, estimated time left: 2377.1 s
+57% done. Elapsed: 3078.6 s, estimated time left: 2322.4 s
+58% done. Elapsed: 3132.0 s, estimated time left: 2268.0 s
+59% done. Elapsed: 3185.2 s, estimated time left: 2213.4 s
+60% done. Elapsed: 3237.8 s, estimated time left: 2158.6 s
+61% done. Elapsed: 3291.0 s, estimated time left: 2104.1 s
+62% done. Elapsed: 3344.5 s, estimated time left: 2049.9 s
+63% done. Elapsed: 3397.9 s, estimated time left: 1995.6 s
+64% done. Elapsed: 3451.6 s, estimated time left: 1941.5 s
+65% done. Elapsed: 3505.0 s, estimated time left: 1887.3 s
+66% done. Elapsed: 3558.9 s, estimated time left: 1833.4 s
+67% done. Elapsed: 3612.6 s, estimated time left: 1779.3 s
+68% done. Elapsed: 3666.5 s, estimated time left: 1725.4 s
+69% done. Elapsed: 3719.9 s, estimated time left: 1671.2 s
+70% done. Elapsed: 3773.3 s, estimated time left: 1617.1 s
+71% done. Elapsed: 3826.5 s, estimated time left: 1563.0 s
+72% done. Elapsed: 3879.9 s, estimated time left: 1508.8 s
+73% done. Elapsed: 3933.1 s, estimated time left: 1454.7 s
+74% done. Elapsed: 3986.6 s, estimated time left: 1400.7 s
+75% done. Elapsed: 4039.9 s, estimated time left: 1346.6 s
+76% done. Elapsed: 4093.2 s, estimated time left: 1292.6 s
+77% done. Elapsed: 4146.2 s, estimated time left: 1238.5 s
+78% done. Elapsed: 4199.8 s, estimated time left: 1184.6 s
+79% done. Elapsed: 4254.1 s, estimated time left: 1130.8 s
+80% done. Elapsed: 4308.2 s, estimated time left: 1077.1 s
+81% done. Elapsed: 4362.3 s, estimated time left: 1023.3 s
+82% done. Elapsed: 4416.3 s, estimated time left: 969.4 s
+83% done. Elapsed: 4470.2 s, estimated time left: 915.6 s
+84% done. Elapsed: 4524.1 s, estimated time left: 861.7 s
+85% done. Elapsed: 4578.0 s, estimated time left: 807.9 s
+86% done. Elapsed: 4631.7 s, estimated time left: 754.0 s
+87% done. Elapsed: 4685.3 s, estimated time left: 700.1 s
+88% done. Elapsed: 4738.8 s, estimated time left: 646.2 s
+89% done. Elapsed: 4792.0 s, estimated time left: 592.3 s
+90% done. Elapsed: 4845.7 s, estimated time left: 538.4 s
+91% done. Elapsed: 4899.8 s, estimated time left: 484.6 s
+92% done. Elapsed: 4954.2 s, estimated time left: 430.8 s
+93% done. Elapsed: 5008.3 s, estimated time left: 377.0 s
+94% done. Elapsed: 5062.6 s, estimated time left: 323.1 s
+95% done. Elapsed: 5116.7 s, estimated time left: 269.3 s
+96% done. Elapsed: 5171.2 s, estimated time left: 215.5 s
+97% done. Elapsed: 5225.8 s, estimated time left: 161.6 s
+98% done. Elapsed: 5280.1 s, estimated time left: 107.8 s
+99% done. Elapsed: 5334.8 s, estimated time left: 53.9 s
+Simulation done.
+Simulation run time: 5428.044374755002 s
+Writing spike times to muscarinic-NO/simulation/network-output-spikes-666.txt

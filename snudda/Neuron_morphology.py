@@ -762,7 +762,8 @@ class NeuronMorphology(object):
   ############################################################################
 
   def plotNeuron(self,axis=None,plotAxon=True,plotDendrite=True,lineStyle='-',alpha=1.0,plotOrigo=np.array([0,0,0]),plotScale=1.0):
-    
+    import pdb
+    pdb.set_trace()
     if(self.verbose):
       print("Plotting neuron " + self.swc_filename)
       
@@ -791,8 +792,16 @@ class NeuronMorphology(object):
                   (self.axon[axLinks,2]-plotOrigo[2])*plotScale,
                   linestyle=lineStyle,
                   marker=',',
+                  alpha=alpha)
+          '''
+          ax.plot((self.axon[axLinks,0]-plotOrigo[0])*plotScale,
+                  (self.axon[axLinks,1]-plotOrigo[1])*plotScale,
+                  (self.axon[axLinks,2]-plotOrigo[2])*plotScale,
+                  linestyle=lineStyle,
+                  marker=',',
                   alpha=alpha,
                   c=self.colour)
+          '''
 
           axLinks = list(row)
 
@@ -802,8 +811,16 @@ class NeuronMorphology(object):
                   (self.axon[axLinks,2]-plotOrigo[2])*plotScale,
                   linestyle=lineStyle,
                   marker=',',
+                  alpha=alpha)
+          '''
+          ax.plot((self.axon[axLinks,0]-plotOrigo[0])*plotScale,
+                  (self.axon[axLinks,1]-plotOrigo[1])*plotScale,
+                  (self.axon[axLinks,2]-plotOrigo[2])*plotScale,
+                  linestyle=lineStyle,
+                  marker=',',
                   alpha=alpha,
                   c=self.colour)
+          '''
 
     if(plotDendrite):
       dendLinks = []
@@ -820,8 +837,16 @@ class NeuronMorphology(object):
                   (self.dend[dendLinks,2]-plotOrigo[2])*plotScale,
                   linestyle=lineStyle,
                   marker=',',
+                  alpha=alpha)
+          '''
+          ax.plot((self.dend[dendLinks,0]-plotOrigo[0])*plotScale,
+                  (self.dend[dendLinks,1]-plotOrigo[1])*plotScale,
+                  (self.dend[dendLinks,2]-plotOrigo[2])*plotScale,
+                  linestyle=lineStyle,
+                  marker=',',
                   alpha=alpha,
                   c=self.colour)
+          '''
 
           dendLinks = list(row)
 
@@ -831,15 +856,28 @@ class NeuronMorphology(object):
                 (self.dend[dendLinks,2]-plotOrigo[2])*plotScale,
                 linestyle=lineStyle,
                 marker=',',
+                alpha=alpha)
+        '''
+        ax.plot((self.dend[dendLinks,0]-plotOrigo[0])*plotScale,
+                (self.dend[dendLinks,1]-plotOrigo[1])*plotScale,
+                (self.dend[dendLinks,2]-plotOrigo[2])*plotScale,
+                linestyle=lineStyle,
+                marker=',',
                 alpha=alpha,
                 c=self.colour)
-        
+        '''
           
     if(len(self.soma) > 0):
       ax.scatter((self.soma[:,0]-plotOrigo[0])*plotScale,
                  (self.soma[:,1]-plotOrigo[1])*plotScale,
+                 (self.soma[:,2]-plotOrigo[2])*plotScale,alpha=alpha)
+      '''
+      ax.scatter((self.soma[:,0]-plotOrigo[0])*plotScale,
+                 (self.soma[:,1]-plotOrigo[1])*plotScale,
                  (self.soma[:,2]-plotOrigo[2])*plotScale,
                  c=self.colour,alpha=alpha)
+      
+      '''
       
     plt.axis('equal')
     plt.ion()
@@ -1000,7 +1038,7 @@ class NeuronMorphology(object):
         input(" ")
 
     return ax
-      
+    
   ############################################################################
 
 if __name__ == "__main__":

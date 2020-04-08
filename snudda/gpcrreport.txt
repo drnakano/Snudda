@@ -1,0 +1,24 @@
+The cholinergic density 10.000 voxels as there are 27 varicosities within 
+a single voxel of 3 cubic microns. 
+
+
+      
+    '''
+    Checking if another pointprocess of type - concACh has been placed in the section -
+    as density mechanisms are inserted into sections while the conductance is defined per segment 
+
+    This means that when a density mechanisms (like kir23 with a pointer) is 
+    inserted something has to point at that mechanism in each SEGMENT otherwise there is a "segmentation fault".
+
+    Pointprocesses are placed in SEGMENT so we would like the point process to point to 
+    the density mechanism in that segment and if several synapses are found in a segment, 
+    they should all point to the same pointprocess.
+
+    This means that there are two steps in adding this synapse - 
+    1. if there are no synapses in the section - synapses have to be placed in all segments 
+       and connected to the density mechanism in each segment
+    2. if there are synapses in the section - the netcon connection should be made with 
+       the point process which is in the segment which equals the synapses sectionDist 
+       i.e. position along the section
+    
+    '''

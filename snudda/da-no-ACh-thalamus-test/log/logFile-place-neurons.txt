@@ -1,0 +1,24 @@
+Starting log file
+Using SlurmID: 237No IPYTHON_PROFILE enviroment variable set, running in serialUsing hdf5 version: latest
+Parsing configuration file da-no-ACh-thalamus-test/network-config.json
+Using meshBinWidth 0.00029891487431077526
+Cube mesh, switching to serial processing.
+Using dimensions from config file
+Using meshBinWidth 5e-05
+Cube mesh, switching to serial processing.
+Using dimensions from config file
+Adding: 1 FSN_0
+Adding: 5 dSPN_0
+Adding: 5 dSPN_1
+Adding: 5 dSPN_2
+Adding: 5 dSPN_3
+Adding: 5 iSPN_0
+Adding: 5 iSPN_1
+Adding: 5 iSPN_2
+Adding: 5 iSPN_3
+Adding: 1 ChIN_0
+Adding: 1 LTS_0
+Adding: 1 DopaminergicAxon_2
+Re-sorting the neuron IDs after location
+Writing data to HDF5 file: da-no-ACh-thalamus-test/network-neuron-positions.hdf5
+Program run time: 5.515486915013753End of log. Closing file.
